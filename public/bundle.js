@@ -29493,65 +29493,28 @@ var myInfoComponent = function (_React$Component) {
 	}
 
 	_createClass(myInfoComponent, [{
-		key: 'render',
+		key: "render",
 		value: function render() {
 			return _react2.default.createElement(
-				'div',
-				null,
+				"div",
+				{ className: "row" },
 				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
-				),
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Why Nish?'
+					"div",
+					{ className: "row" },
+					_react2.default.createElement(
+						"div",
+						{ className: "col-md-1 col-md-offset-1" },
+						_react2.default.createElement("img", { src: "/nish.jpg", className: "img-circle" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "col-md-offset-5" },
+						_react2.default.createElement(
+							"h2",
+							null,
+							"FullStack Javascript Developer"
+						)
+					)
 				)
 			);
 		}

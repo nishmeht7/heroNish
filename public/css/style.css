@@ -1,3 +1,8 @@
 body {
     background-color: lightblue;
 }
+
+.img-circle {
+	border-radius: 50%;
+	border:10px solid #000000;
+}
