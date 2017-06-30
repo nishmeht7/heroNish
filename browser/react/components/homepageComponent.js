@@ -9,7 +9,28 @@ export class homepageComponent extends React.Component {
 	render (){
 		return (
 			<div>
-				<h1>Welcome to the world of heroNish bitch!</h1>
+				<nav className="navbar navbar-inverse">
+				    <div className="navbar-header">
+				        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" className="navbar-toggle">
+				            <span className="sr-only">Toggle navigation</span>
+				            <span className="icon-bar"></span>
+				            <span className="icon-bar"></span>
+				            <span className="icon-bar"></span>
+				        </button>
+				        <a href="#" className="navbar-brand">Nishant</a>
+				    </div>
+				    <div id="navbarCollapse" className="collapse navbar-collapse">
+				        <ul className="nav navbar-nav">
+				            <li className="active"><a href="#">Home</a></li>
+				            <li><a href="#">Profile</a></li>
+				            <li><a href="#">Messages</a></li>
+				        </ul>
+				        <ul className="nav navbar-nav navbar-right">
+				            <li><a href="#">Login</a></li>
+				        </ul>
+				    </div>
+				</nav>
+
 			</div>
 		)
 	}

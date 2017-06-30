@@ -8,7 +8,7 @@ import homepageContainer from './components/homepageComponent.js';
 export default function Root() {
 	return (
 		<Router history={browserHistory}>
-			<Route path='/home' component={homepageComponent} />
+			<Route path='/' component={homepageComponent} />
 		</Router>
 	)
 }

@@ -25194,7 +25194,7 @@ function Root() {
 	return _react2.default.createElement(
 		_reactRouter.Router,
 		{ history: _reactRouter.browserHistory },
-		_react2.default.createElement(_reactRouter.Route, { path: '/home', component: _homepageComponent.homepageComponent })
+		_react2.default.createElement(_reactRouter.Route, { path: '/', component: _homepageComponent.homepageComponent })
 	);
 }
 
@@ -29352,15 +29352,83 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 	}
 
 	_createClass(homepageComponent, [{
-		key: 'render',
+		key: "render",
 		value: function render() {
 			return _react2.default.createElement(
-				'div',
+				"div",
 				null,
 				_react2.default.createElement(
-					'h1',
-					null,
-					'Welcome to the world of heroNish bitch!'
+					"nav",
+					{ className: "navbar navbar-inverse" },
+					_react2.default.createElement(
+						"div",
+						{ className: "navbar-header" },
+						_react2.default.createElement(
+							"button",
+							{ type: "button", "data-target": "#navbarCollapse", "data-toggle": "collapse", className: "navbar-toggle" },
+							_react2.default.createElement(
+								"span",
+								{ className: "sr-only" },
+								"Toggle navigation"
+							),
+							_react2.default.createElement("span", { className: "icon-bar" }),
+							_react2.default.createElement("span", { className: "icon-bar" }),
+							_react2.default.createElement("span", { className: "icon-bar" })
+						),
+						_react2.default.createElement(
+							"a",
+							{ href: "#", className: "navbar-brand" },
+							"Nishant"
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ id: "navbarCollapse", className: "collapse navbar-collapse" },
+						_react2.default.createElement(
+							"ul",
+							{ className: "nav navbar-nav" },
+							_react2.default.createElement(
+								"li",
+								{ className: "active" },
+								_react2.default.createElement(
+									"a",
+									{ href: "#" },
+									"Home"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#" },
+									"Profile"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#" },
+									"Messages"
+								)
+							)
+						),
+						_react2.default.createElement(
+							"ul",
+							{ className: "nav navbar-nav navbar-right" },
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#" },
+									"Login"
+								)
+							)
+						)
+					)
 				)
 			);
 		}
