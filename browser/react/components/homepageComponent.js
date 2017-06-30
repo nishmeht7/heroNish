@@ -7,6 +7,7 @@ export class homepageComponent extends React.Component {
 	}
 
 	render (){
+		const { children } = this.props
 		return (
 			<div>
 				<nav className="navbar navbar-inverse">
@@ -30,7 +31,7 @@ export class homepageComponent extends React.Component {
 				        </ul>
 				    </div>
 				</nav>
-
+				{children}
 			</div>
 		)
 	}

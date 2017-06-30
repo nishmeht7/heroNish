@@ -3,12 +3,15 @@ import { Router, Route, browserHistory, IndexRedirect, IndexRoute } from 'react-
 import { Provider } from 'react-redux';
 import { homepageComponent } from './components/homepageComponent.js';
 import homepageContainer from './components/homepageComponent.js';
+import myInfoComponent from './components/myInfoComponent.js';
 
 
 export default function Root() {
 	return (
 		<Router history={browserHistory}>
-			<Route path='/' component={homepageComponent} />
+			<Route path="/root" component={homepageComponent}>
+				<Route path="/" component={myInfoComponent} />
+			</Route>
 		</Router>
 	)
 }
