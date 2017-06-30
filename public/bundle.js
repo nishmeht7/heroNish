@@ -29514,6 +29514,19 @@ var myInfoComponent = function (_React$Component) {
 							null,
 							"FullStack Javascript Developer"
 						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "background col-md-offset-4" },
+						_react2.default.createElement(
+							"div",
+							{ className: "transbox" },
+							_react2.default.createElement(
+								"p",
+								null,
+								"Nishant Mehta is a FullStack developer, graduating from the prestigious FullStack Academy of Code. He loves hacking through complex problems and his current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday! "
+							)
+						)
 					)
 				)
 			);

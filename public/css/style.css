@@ -1,8 +1,30 @@
 body {
-    background-color: lightblue;
+	background-color: lightblue; 
 }
 
 .img-circle {
 	border-radius: 50%;
 	border:10px solid #000000;
 }
+
+.background {
+	/*background: url(klematis.jpg) repeat;*/
+	background-color: black;
+  	border: 2px solid black;
+  	width:50%;
+}
+
+p {
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+}
+.transbox {
+	margin: 20px;
+	width: 100%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
