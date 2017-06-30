@@ -29513,18 +29513,82 @@ var myInfoComponent = function (_React$Component) {
 							"h2",
 							null,
 							"FullStack Javascript Developer"
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "background col-md-offset-4" },
+						),
 						_react2.default.createElement(
 							"div",
-							{ className: "transbox" },
+							{ id: "text-carousel", className: "carousel slide", "data-ride": "carousel" },
 							_react2.default.createElement(
-								"p",
-								null,
-								"Nishant Mehta is a FullStack developer, graduating from the prestigious FullStack Academy of Code. He loves hacking through complex problems and his current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday! "
+								"div",
+								{ className: "row-inner" },
+								_react2.default.createElement(
+									"div",
+									{ className: "col-md-offset-3 col-md-6" },
+									_react2.default.createElement(
+										"div",
+										{ className: "carousel-inner" },
+										_react2.default.createElement(
+											"div",
+											{ className: "item active" },
+											_react2.default.createElement(
+												"div",
+												{ className: "carousel-content" },
+												_react2.default.createElement(
+													"div",
+													null,
+													_react2.default.createElement(
+														"p",
+														null,
+														"Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?"
+													)
+												)
+											)
+										),
+										_react2.default.createElement(
+											"div",
+											{ className: "item" },
+											_react2.default.createElement(
+												"div",
+												{ className: "carousel-content" },
+												_react2.default.createElement(
+													"div",
+													null,
+													_react2.default.createElement(
+														"p",
+														null,
+														"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sint fuga temporibus nam saepe delectus expedita vitae magnam necessitatibus dolores tempore consequatur dicta cumque repellendus eligendi ducimus placeat! "
+													)
+												)
+											)
+										),
+										_react2.default.createElement(
+											"div",
+											{ className: "item" },
+											_react2.default.createElement(
+												"div",
+												{ className: "carousel-content" },
+												_react2.default.createElement(
+													"div",
+													null,
+													_react2.default.createElement(
+														"p",
+														null,
+														"Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?"
+													)
+												)
+											)
+										)
+									)
+								)
+							),
+							_react2.default.createElement(
+								"a",
+								{ className: "left carousel-control", href: "#text-carousel", "data-slide": "prev" },
+								_react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-left" })
+							),
+							_react2.default.createElement(
+								"a",
+								{ className: "right carousel-control", href: "#text-carousel", "data-slide": "next" },
+								_react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-right" })
 							)
 						)
 					)

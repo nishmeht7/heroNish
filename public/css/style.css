@@ -3,8 +3,9 @@ body {
 }
 
 .img-circle {
-	border-radius: 50%;
+	border-radius: 20%;
 	border:10px solid #000000;
+	height: 80%;
 }
 
 .background {
@@ -15,9 +16,14 @@ body {
 }
 
 p {
-	color: black;
+	color: white;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 18px;
+}
+
+h2 {
+	color: white;
+	padding-left: 140px;
 }
 .transbox {
 	margin: 20px;
@@ -28,3 +34,24 @@ p {
     filter: alpha(opacity=60);
 }
 
+.row-inner {
+	background: rgba(0,0,0,.5);
+	height: 80%;
+	border-top: 50px;
+	padding-top: 20px;
+}
+
+.carousel-content {
+    color: rgba(0,0,0,.5);
+    display:flex;
+    align-items:center;
+    padding-bottom: 0px;
+}
+
+#text-carousel {
+  color: rgba(0,0,0,.5);
+  width: 90%;
+  height: 380px;
+  padding-top: 50px;
+  border: 1px solid black;
+}
