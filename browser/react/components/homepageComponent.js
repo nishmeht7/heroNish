@@ -18,16 +18,16 @@ export class homepageComponent extends React.Component {
 				            <span className="icon-bar"></span>
 				            <span className="icon-bar"></span>
 				        </button>
-				        <a href="#" className="navbar-brand">Nishant</a>
+				        <a href="#" className="navbar-brand">Nishant Mehta</a>
 				    </div>
 				    <div id="navbarCollapse" className="collapse navbar-collapse">
 				        <ul className="nav navbar-nav">
 				            <li className="active"><a href="#">Home</a></li>
-				            <li><a href="#">Profile</a></li>
-				            <li><a href="#">Messages</a></li>
+				            <li><a href="#">My Projects</a></li>
+				            <li><a href="#">Work Experience</a></li>
 				        </ul>
 				        <ul className="nav navbar-nav navbar-right">
-				            <li><a href="#">Login</a></li>
+				            <li><a href="#">Interests</a></li>
 				        </ul>
 				    </div>
 				</nav>

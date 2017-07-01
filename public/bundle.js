@@ -29388,7 +29388,7 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 						_react2.default.createElement(
 							"a",
 							{ href: "#", className: "navbar-brand" },
-							"Nishant"
+							"Nishant Mehta"
 						)
 					),
 					_react2.default.createElement(
@@ -29412,7 +29412,7 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 								_react2.default.createElement(
 									"a",
 									{ href: "#" },
-									"Profile"
+									"My Projects"
 								)
 							),
 							_react2.default.createElement(
@@ -29421,7 +29421,7 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 								_react2.default.createElement(
 									"a",
 									{ href: "#" },
-									"Messages"
+									"Work Experience"
 								)
 							)
 						),
@@ -29434,7 +29434,7 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 								_react2.default.createElement(
 									"a",
 									{ href: "#" },
-									"Login"
+									"Interests"
 								)
 							)
 						)
@@ -29538,7 +29538,7 @@ var myInfoComponent = function (_React$Component) {
 													_react2.default.createElement(
 														"p",
 														null,
-														"Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?"
+														"Nishant Mehta is a FullStack developer, graduating from the prestigious FullStack Academy of Code. He loves hacking through complex problems and his current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday! "
 													)
 												)
 											)
