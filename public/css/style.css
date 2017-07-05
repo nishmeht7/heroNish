@@ -1,5 +1,5 @@
 body {
-	background-color: grey; 
+	background-color: #2C3E50; 
 }
 
 .img-circle {
@@ -27,10 +27,13 @@ body {
 }
 
 .rounded {
+	position: absolute;
     display: block;
-    margin: 0 auto;
     height: auto;
     width: 100%;
+    margin: auto;
+    bottom: 0px;
+    top: 5px;
 }
 
 .background {
