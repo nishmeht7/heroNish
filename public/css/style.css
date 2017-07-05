@@ -3,9 +3,34 @@ body {
 }
 
 .img-circle {
+	/*
 	border-radius: 20%;
 	border:1px solid #000000;
-	height: 80%;
+	height: 80%;*/
+	width: 320px;
+    height: 320px;
+    position: relative;
+    border: 2px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow:hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rounded {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
 }
 
 .background {
@@ -23,8 +48,8 @@ p {
 
 h2 {
 	color: white;
-	padding-left: 140px;
 }
+
 .transbox {
 	margin: 20px;
 	width: 100%;
@@ -35,8 +60,9 @@ h2 {
 }
 
 .row {
-	background-color: black;
+	background-color: #18BC9C;
 	padding: 5px;
+	height: 90vh/2;
 }
 
 .row-inner {
