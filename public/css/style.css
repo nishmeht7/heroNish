@@ -52,42 +52,60 @@ p {
 h2 {
 	color: white;
 	font-size: 50px;
+	margin: 5px;
 }
 
 h3 {
 	color: white;
 	font-size: 30px;
-}
-.transbox {
-	margin: 20px;
-	width: 100%;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+	margin: 5px;
 }
 
-.row {
+.glyphicon.glyphicon-star {
+    font-size: 45px;
+}
+
+.row-main {
 	background-color: #18BC9C;
 	padding: 5px;
 	height: 90vh/2;
 }
 
-.row-inner {
-	height: 80%;
-	border-top: 50px;
-	padding-top: 20px;
+hr.star-light,
+hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
 }
 
-.carousel-content {
-    display:flex;
-    align-items:center;
-    padding-bottom: 0px;
+hr.star-light:after,
+hr.star-primary:after {
+    content: "\2605";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
 }
 
-#text-carousel {
-  width: 90%;
-  height: 380px;
-  padding-top: 50px;
-  border: 1px solid black;
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: #18bc9c;
+}
+
+hr.star-primary {
+    border-color: #2c3e50;
+}
+
+hr.star-primary:after {
+    color: #2c3e50;
+    background-color: #18bc9c;
 }

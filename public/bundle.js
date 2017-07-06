@@ -29500,7 +29500,7 @@ var myInfoComponent = function (_React$Component) {
 				null,
 				_react2.default.createElement(
 					"div",
-					{ className: "row" },
+					{ className: "row-main" },
 					_react2.default.createElement(
 						"div",
 						null,
@@ -29523,11 +29523,18 @@ var myInfoComponent = function (_React$Component) {
 						"div",
 						{ className: "text-center" },
 						_react2.default.createElement(
-							"h3",
-							null,
-							"---------X----------"
-						),
-						_react2.default.createElement("span", { "class": "glyphicon glyphicon-search" })
+							"div",
+							{ className: "container" },
+							_react2.default.createElement(
+								"div",
+								{ className: "row" },
+								_react2.default.createElement(
+									"div",
+									{ className: "col-md-12" },
+									_react2.default.createElement("hr", { className: "star-light" })
+								)
+							)
+						)
 					),
 					_react2.default.createElement(
 						"div",
