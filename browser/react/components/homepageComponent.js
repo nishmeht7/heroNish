@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export class homepageComponent extends React.Component {
+export class HomepageComponent extends React.Component {
 	constructor () {
 		super()
 	}
@@ -49,6 +49,6 @@ function mapDispatch(state, ownProps){
 
 }
 
-const homepageContainer = connect(mapState, mapDispatch)(homepageComponent);
+const homepageContainer = connect(mapState, mapDispatch)(HomepageComponent);
 
 export default homepageContainer;

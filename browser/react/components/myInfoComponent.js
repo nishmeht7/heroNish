@@ -1,6 +1,7 @@
 import React from 'react';
+import AboutMeComponent from './aboutMeComponent';
 
-export default class myInfoComponent extends React.Component {
+export default class MyInfoComponent extends React.Component {
 	constructor(){
 		super()
 	}
@@ -30,6 +31,7 @@ export default class myInfoComponent extends React.Component {
 						<h3>FullStack Javascript Developer</h3>
 					</div> 
 				</div>
+				<AboutMeComponent />
 			</div>
 		)
 	}

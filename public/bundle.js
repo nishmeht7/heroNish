@@ -25200,7 +25200,7 @@ function Root() {
 		{ history: _reactRouter.browserHistory },
 		_react2.default.createElement(
 			_reactRouter.Route,
-			{ path: '/root', component: _homepageComponent.homepageComponent },
+			{ path: '/root', component: _homepageComponent.HomepageComponent },
 			_react2.default.createElement(_reactRouter.Route, { path: '/', component: _myInfoComponent2.default })
 		)
 	);
@@ -29332,7 +29332,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.homepageComponent = undefined;
+exports.HomepageComponent = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -29350,16 +29350,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var homepageComponent = exports.homepageComponent = function (_React$Component) {
-	_inherits(homepageComponent, _React$Component);
+var HomepageComponent = exports.HomepageComponent = function (_React$Component) {
+	_inherits(HomepageComponent, _React$Component);
 
-	function homepageComponent() {
-		_classCallCheck(this, homepageComponent);
+	function HomepageComponent() {
+		_classCallCheck(this, HomepageComponent);
 
-		return _possibleConstructorReturn(this, (homepageComponent.__proto__ || Object.getPrototypeOf(homepageComponent)).call(this));
+		return _possibleConstructorReturn(this, (HomepageComponent.__proto__ || Object.getPrototypeOf(HomepageComponent)).call(this));
 	}
 
-	_createClass(homepageComponent, [{
+	_createClass(HomepageComponent, [{
 		key: "render",
 		value: function render() {
 			var children = this.props.children;
@@ -29445,7 +29445,7 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 		}
 	}]);
 
-	return homepageComponent;
+	return HomepageComponent;
 }(_react2.default.Component);
 
 /* ------Container--------------*/
@@ -29454,12 +29454,114 @@ function mapState(state, ownProps) {}
 
 function mapDispatch(state, ownProps) {}
 
-var homepageContainer = (0, _reactRedux.connect)(mapState, mapDispatch)(homepageComponent);
+var homepageContainer = (0, _reactRedux.connect)(mapState, mapDispatch)(HomepageComponent);
 
 exports.default = homepageContainer;
 
 /***/ }),
 /* 277 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _aboutMeComponent = __webpack_require__(278);
+
+var _aboutMeComponent2 = _interopRequireDefault(_aboutMeComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MyInfoComponent = function (_React$Component) {
+	_inherits(MyInfoComponent, _React$Component);
+
+	function MyInfoComponent() {
+		_classCallCheck(this, MyInfoComponent);
+
+		return _possibleConstructorReturn(this, (MyInfoComponent.__proto__ || Object.getPrototypeOf(MyInfoComponent)).call(this));
+	}
+
+	_createClass(MyInfoComponent, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'div',
+					{ className: 'row-main' },
+					_react2.default.createElement(
+						'div',
+						null,
+						_react2.default.createElement(
+							'div',
+							{ className: 'img-circle' },
+							_react2.default.createElement('img', { src: '/nish.jpg', className: 'rounded' })
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'text-center' },
+						_react2.default.createElement(
+							'h2',
+							null,
+							'Nishant Mehta'
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'text-center' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'container' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'row' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'col-md-12' },
+									_react2.default.createElement('hr', { className: 'star-light' })
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'text-center' },
+						_react2.default.createElement(
+							'h3',
+							null,
+							'FullStack Javascript Developer'
+						)
+					)
+				),
+				_react2.default.createElement(_aboutMeComponent2.default, null)
+			);
+		}
+	}]);
+
+	return MyInfoComponent;
+}(_react2.default.Component);
+
+exports.default = MyInfoComponent;
+
+/***/ }),
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29483,16 +29585,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var myInfoComponent = function (_React$Component) {
-	_inherits(myInfoComponent, _React$Component);
+var AboutMeComponent = function (_React$Component) {
+	_inherits(AboutMeComponent, _React$Component);
 
-	function myInfoComponent() {
-		_classCallCheck(this, myInfoComponent);
+	function AboutMeComponent() {
+		_classCallCheck(this, AboutMeComponent);
 
-		return _possibleConstructorReturn(this, (myInfoComponent.__proto__ || Object.getPrototypeOf(myInfoComponent)).call(this));
+		return _possibleConstructorReturn(this, (AboutMeComponent.__proto__ || Object.getPrototypeOf(AboutMeComponent)).call(this));
 	}
 
-	_createClass(myInfoComponent, [{
+	_createClass(AboutMeComponent, [{
 		key: "render",
 		value: function render() {
 			return _react2.default.createElement(
@@ -29500,23 +29602,14 @@ var myInfoComponent = function (_React$Component) {
 				null,
 				_react2.default.createElement(
 					"div",
-					{ className: "row-main" },
-					_react2.default.createElement(
-						"div",
-						null,
-						_react2.default.createElement(
-							"div",
-							{ className: "img-circle" },
-							_react2.default.createElement("img", { src: "/nish.jpg", className: "rounded" })
-						)
-					),
+					{ className: "row-about" },
 					_react2.default.createElement(
 						"div",
 						{ className: "text-center" },
 						_react2.default.createElement(
 							"h2",
-							null,
-							"Nishant Mehta"
+							{ className: "h2-aboutMe" },
+							"About Me"
 						)
 					),
 					_react2.default.createElement(
@@ -29531,18 +29624,37 @@ var myInfoComponent = function (_React$Component) {
 								_react2.default.createElement(
 									"div",
 									{ className: "col-md-12" },
-									_react2.default.createElement("hr", { className: "star-light" })
+									_react2.default.createElement("hr", { className: "star-primary" })
 								)
 							)
 						)
 					),
 					_react2.default.createElement(
 						"div",
-						{ className: "text-center" },
+						{ className: "col-md-6" },
 						_react2.default.createElement(
-							"h3",
-							null,
-							"FullStack Javascript Developer"
+							"div",
+							{ className: "aboutText" },
+							_react2.default.createElement(
+								"p",
+								null,
+								"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except ofcourse jumping from a plane at 20,000 feet above the palm islands in Dubai!",
+								_react2.default.createElement("br", null),
+								"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
+								_react2.default.createElement("br", null),
+								"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
+								_react2.default.createElement("br", null),
+								"HIRE ME!!!!!"
+							)
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "col-md-offset-6" },
+						_react2.default.createElement(
+							"div",
+							{ className: "nishPicDiv" },
+							_react2.default.createElement("img", { src: "/skydive.png", className: "nishImg" })
 						)
 					)
 				)
@@ -29550,10 +29662,10 @@ var myInfoComponent = function (_React$Component) {
 		}
 	}]);
 
-	return myInfoComponent;
+	return AboutMeComponent;
 }(_react2.default.Component);
 
-exports.default = myInfoComponent;
+exports.default = AboutMeComponent;
 
 /***/ })
 /******/ ]);
