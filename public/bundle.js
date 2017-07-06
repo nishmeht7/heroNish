@@ -29518,6 +29518,25 @@ var myInfoComponent = function (_React$Component) {
 							null,
 							"Nishant Mehta"
 						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "text-center" },
+						_react2.default.createElement(
+							"h3",
+							null,
+							"---------X----------"
+						),
+						_react2.default.createElement("span", { "class": "glyphicon glyphicon-search" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "text-center" },
+						_react2.default.createElement(
+							"h3",
+							null,
+							"FullStack Javascript Developer"
+						)
 					)
 				)
 			);
