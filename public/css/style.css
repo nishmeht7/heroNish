@@ -106,6 +106,19 @@ h3 {
     clear: both;
 }
 
+.row-portfolio {
+    background-color: #18BC9C;
+    height: 100vh;
+}
+
+.h2-portfolio {
+    color: white;
+    font-size: 50px;
+    margin: 5px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;

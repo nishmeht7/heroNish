@@ -29479,6 +29479,10 @@ var _aboutMeComponent = __webpack_require__(278);
 
 var _aboutMeComponent2 = _interopRequireDefault(_aboutMeComponent);
 
+var _Portfolio = __webpack_require__(279);
+
+var _Portfolio2 = _interopRequireDefault(_Portfolio);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29550,7 +29554,8 @@ var MyInfoComponent = function (_React$Component) {
 						)
 					)
 				),
-				_react2.default.createElement(_aboutMeComponent2.default, null)
+				_react2.default.createElement(_aboutMeComponent2.default, null),
+				_react2.default.createElement(_Portfolio2.default, null)
 			);
 		}
 	}]);
@@ -29666,6 +29671,85 @@ var AboutMeComponent = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = AboutMeComponent;
+
+/***/ }),
+/* 279 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Portfolio = function (_React$Component) {
+	_inherits(Portfolio, _React$Component);
+
+	function Portfolio() {
+		_classCallCheck(this, Portfolio);
+
+		return _possibleConstructorReturn(this, (Portfolio.__proto__ || Object.getPrototypeOf(Portfolio)).call(this));
+	}
+
+	_createClass(Portfolio, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"div",
+				null,
+				_react2.default.createElement(
+					"div",
+					{ className: "row-portfolio" },
+					_react2.default.createElement(
+						"div",
+						{ className: "text-center" },
+						_react2.default.createElement(
+							"h2",
+							{ className: "h2-portfolio" },
+							"My Portfolio"
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "text-center" },
+						_react2.default.createElement(
+							"div",
+							{ className: "container" },
+							_react2.default.createElement(
+								"div",
+								{ className: "row" },
+								_react2.default.createElement(
+									"div",
+									{ className: "col-md-12" },
+									_react2.default.createElement("hr", { className: "star-light" })
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Portfolio;
+}(_react2.default.Component);
+
+exports.default = Portfolio;
 
 /***/ })
 /******/ ]);

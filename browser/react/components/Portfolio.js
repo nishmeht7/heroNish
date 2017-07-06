@@ -7,7 +7,22 @@ export default class Portfolio extends React.Component {
 
 	render () {
 		return (
-			<h1>What's Gucci!!!</h1>
+			<div>
+				<div className="row-portfolio">
+					<div className="text-center">
+						<h2 className="h2-portfolio">My Portfolio</h2>
+					</div>
+					<div className="text-center">
+						<div className="container">
+					        <div className="row">
+					            <div className="col-md-12">
+					                <hr className="star-light" />
+					            </div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+			</div>
 		)
 	}
 }

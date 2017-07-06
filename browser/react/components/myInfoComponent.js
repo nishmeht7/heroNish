@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutMeComponent from './aboutMeComponent';
+import Portfolio from './Portfolio';
 
 export default class MyInfoComponent extends React.Component {
 	constructor(){
@@ -29,9 +30,10 @@ export default class MyInfoComponent extends React.Component {
 					</div>
 					<div className="text-center">
 						<h3>FullStack Javascript Developer</h3>
-					</div> 
+					</div>
 				</div>
 				<AboutMeComponent />
+				<Portfolio />
 			</div>
 		)
 	}
