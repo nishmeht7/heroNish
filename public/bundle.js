@@ -29740,6 +29740,18 @@ var Portfolio = function (_React$Component) {
 								)
 							)
 						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "lightview" },
+						_react2.default.createElement(
+							"a",
+							{ href: "/nish.jpg",
+								"class": "lightview",
+								"data-lightview-title": "The title goes above the caption",
+								"data-lightview-caption": "Use a caption to give your visitors some more information" },
+							"Title & caption"
+						)
 					)
 				)
 			);

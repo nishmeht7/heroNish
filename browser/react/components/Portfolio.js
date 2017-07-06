@@ -21,6 +21,12 @@ export default class Portfolio extends React.Component {
 					        </div>
 					    </div>
 					</div>
+					<div className="lightview">
+						<a href="/nish.jpg" 
+   class="lightview" 
+   data-lightview-title="The title goes above the caption" 
+   data-lightview-caption="Use a caption to give your visitors some more information">Title & caption</a>
+					</div>
 				</div>
 			</div>
 		)
