@@ -25200,7 +25200,7 @@ function Root() {
 		{ history: _reactRouter.browserHistory },
 		_react2.default.createElement(
 			_reactRouter.Route,
-			{ path: '/root', component: _homepageComponent.homepageComponent },
+			{ path: '/root', component: _homepageComponent.HomepageComponent },
 			_react2.default.createElement(_reactRouter.Route, { path: '/', component: _myInfoComponent2.default })
 		)
 	);
@@ -29332,7 +29332,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.homepageComponent = undefined;
+exports.HomepageComponent = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -29350,16 +29350,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var homepageComponent = exports.homepageComponent = function (_React$Component) {
-	_inherits(homepageComponent, _React$Component);
+var HomepageComponent = exports.HomepageComponent = function (_React$Component) {
+	_inherits(HomepageComponent, _React$Component);
 
-	function homepageComponent() {
-		_classCallCheck(this, homepageComponent);
+	function HomepageComponent() {
+		_classCallCheck(this, HomepageComponent);
 
-		return _possibleConstructorReturn(this, (homepageComponent.__proto__ || Object.getPrototypeOf(homepageComponent)).call(this));
+		return _possibleConstructorReturn(this, (HomepageComponent.__proto__ || Object.getPrototypeOf(HomepageComponent)).call(this));
 	}
 
-	_createClass(homepageComponent, [{
+	_createClass(HomepageComponent, [{
 		key: "render",
 		value: function render() {
 			var children = this.props.children;
@@ -29369,7 +29369,7 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 				null,
 				_react2.default.createElement(
 					"nav",
-					{ className: "navbar navbar-inverse" },
+					{ className: "navbar navbar-inverse navbar-fixed-top" },
 					_react2.default.createElement(
 						"div",
 						{ className: "navbar-header" },
@@ -29387,7 +29387,7 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 						),
 						_react2.default.createElement(
 							"a",
-							{ href: "#", className: "navbar-brand" },
+							{ href: "#me", className: "navbar-brand" },
 							"Nishant Mehta"
 						)
 					),
@@ -29399,11 +29399,11 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 							{ className: "nav navbar-nav" },
 							_react2.default.createElement(
 								"li",
-								{ className: "active" },
+								null,
 								_react2.default.createElement(
 									"a",
-									{ href: "#" },
-									"Home"
+									{ href: "#about" },
+									"About Me"
 								)
 							),
 							_react2.default.createElement(
@@ -29411,17 +29411,8 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 								null,
 								_react2.default.createElement(
 									"a",
-									{ href: "#" },
-									"My Projects"
-								)
-							),
-							_react2.default.createElement(
-								"li",
-								null,
-								_react2.default.createElement(
-									"a",
-									{ href: "#" },
-									"Work Experience"
+									{ href: "#portfolio" },
+									"My Portfolio"
 								)
 							)
 						),
@@ -29433,7 +29424,7 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 								null,
 								_react2.default.createElement(
 									"a",
-									{ href: "#" },
+									{ href: "#interests" },
 									"Interests"
 								)
 							)
@@ -29445,7 +29436,7 @@ var homepageComponent = exports.homepageComponent = function (_React$Component) 
 		}
 	}]);
 
-	return homepageComponent;
+	return HomepageComponent;
 }(_react2.default.Component);
 
 /* ------Container--------------*/
@@ -29454,12 +29445,123 @@ function mapState(state, ownProps) {}
 
 function mapDispatch(state, ownProps) {}
 
-var homepageContainer = (0, _reactRedux.connect)(mapState, mapDispatch)(homepageComponent);
+var homepageContainer = (0, _reactRedux.connect)(mapState, mapDispatch)(HomepageComponent);
 
 exports.default = homepageContainer;
 
 /***/ }),
 /* 277 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _aboutMeComponent = __webpack_require__(278);
+
+var _aboutMeComponent2 = _interopRequireDefault(_aboutMeComponent);
+
+var _Portfolio = __webpack_require__(279);
+
+var _Portfolio2 = _interopRequireDefault(_Portfolio);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MyInfoComponent = function (_React$Component) {
+	_inherits(MyInfoComponent, _React$Component);
+
+	function MyInfoComponent() {
+		_classCallCheck(this, MyInfoComponent);
+
+		return _possibleConstructorReturn(this, (MyInfoComponent.__proto__ || Object.getPrototypeOf(MyInfoComponent)).call(this));
+	}
+
+	_createClass(MyInfoComponent, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'section',
+				{ id: 'me' },
+				_react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'div',
+						{ className: 'row-main' },
+						_react2.default.createElement(
+							'div',
+							null,
+							_react2.default.createElement(
+								'div',
+								{ className: 'img-circle' },
+								_react2.default.createElement('img', { src: '/nish.jpg', className: 'rounded' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'text-center' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Nishant Mehta'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'text-center' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'container' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'row' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'col-md-12' },
+										_react2.default.createElement('hr', { className: 'star-light' })
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'text-center' },
+							_react2.default.createElement(
+								'h3',
+								null,
+								'FullStack Javascript Developer'
+							)
+						)
+					),
+					_react2.default.createElement(_aboutMeComponent2.default, null),
+					_react2.default.createElement(_Portfolio2.default, null)
+				)
+			);
+		}
+	}]);
+
+	return MyInfoComponent;
+}(_react2.default.Component);
+
+exports.default = MyInfoComponent;
+
+/***/ }),
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29483,112 +29585,79 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var myInfoComponent = function (_React$Component) {
-	_inherits(myInfoComponent, _React$Component);
+var AboutMeComponent = function (_React$Component) {
+	_inherits(AboutMeComponent, _React$Component);
 
-	function myInfoComponent() {
-		_classCallCheck(this, myInfoComponent);
+	function AboutMeComponent() {
+		_classCallCheck(this, AboutMeComponent);
 
-		return _possibleConstructorReturn(this, (myInfoComponent.__proto__ || Object.getPrototypeOf(myInfoComponent)).call(this));
+		return _possibleConstructorReturn(this, (AboutMeComponent.__proto__ || Object.getPrototypeOf(AboutMeComponent)).call(this));
 	}
 
-	_createClass(myInfoComponent, [{
+	_createClass(AboutMeComponent, [{
 		key: "render",
 		value: function render() {
 			return _react2.default.createElement(
-				"div",
-				{ className: "row" },
+				"section",
+				{ id: "about" },
 				_react2.default.createElement(
 					"div",
-					{ className: "row" },
+					null,
 					_react2.default.createElement(
 						"div",
-						{ className: "col-md-1 col-md-offset-1" },
-						_react2.default.createElement("img", { src: "/nish.jpg", className: "img-circle" })
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "col-md-offset-5" },
+						{ className: "row-about" },
 						_react2.default.createElement(
-							"h2",
-							null,
-							"FullStack Javascript Developer"
+							"div",
+							{ className: "text-center" },
+							_react2.default.createElement(
+								"h2",
+								{ className: "h2-aboutMe" },
+								"About Me"
+							)
 						),
 						_react2.default.createElement(
 							"div",
-							{ id: "text-carousel", className: "carousel slide", "data-ride": "carousel" },
+							{ className: "text-center" },
 							_react2.default.createElement(
 								"div",
-								{ className: "row-inner" },
+								{ className: "container" },
 								_react2.default.createElement(
 									"div",
-									{ className: "col-md-offset-3 col-md-6" },
+									{ className: "row" },
 									_react2.default.createElement(
 										"div",
-										{ className: "carousel-inner" },
-										_react2.default.createElement(
-											"div",
-											{ className: "item active" },
-											_react2.default.createElement(
-												"div",
-												{ className: "carousel-content" },
-												_react2.default.createElement(
-													"div",
-													null,
-													_react2.default.createElement(
-														"p",
-														null,
-														"Nishant Mehta is a FullStack developer, graduating from the prestigious FullStack Academy of Code. He loves hacking through complex problems and his current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday! "
-													)
-												)
-											)
-										),
-										_react2.default.createElement(
-											"div",
-											{ className: "item" },
-											_react2.default.createElement(
-												"div",
-												{ className: "carousel-content" },
-												_react2.default.createElement(
-													"div",
-													null,
-													_react2.default.createElement(
-														"p",
-														null,
-														"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sint fuga temporibus nam saepe delectus expedita vitae magnam necessitatibus dolores tempore consequatur dicta cumque repellendus eligendi ducimus placeat! "
-													)
-												)
-											)
-										),
-										_react2.default.createElement(
-											"div",
-											{ className: "item" },
-											_react2.default.createElement(
-												"div",
-												{ className: "carousel-content" },
-												_react2.default.createElement(
-													"div",
-													null,
-													_react2.default.createElement(
-														"p",
-														null,
-														"Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?"
-													)
-												)
-											)
-										)
+										{ className: "col-md-12" },
+										_react2.default.createElement("hr", { className: "star-primary" })
 									)
 								)
-							),
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "col-md-6" },
 							_react2.default.createElement(
-								"a",
-								{ className: "left carousel-control", href: "#text-carousel", "data-slide": "prev" },
-								_react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-left" })
-							),
+								"div",
+								{ className: "aboutText" },
+								_react2.default.createElement(
+									"p",
+									null,
+									"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except ofcourse jumping from a plane at 20,000 feet above the palm islands in Dubai!",
+									_react2.default.createElement("br", null),
+									"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
+									_react2.default.createElement("br", null),
+									"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
+									_react2.default.createElement("br", null),
+									"HIRE ME!!!!!"
+								)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "col-md-offset-6" },
 							_react2.default.createElement(
-								"a",
-								{ className: "right carousel-control", href: "#text-carousel", "data-slide": "next" },
-								_react2.default.createElement("span", { className: "glyphicon glyphicon-chevron-right" })
+								"div",
+								{ className: "nishPicDiv" },
+								_react2.default.createElement("img", { src: "/skydive.png", className: "nishImg" })
 							)
 						)
 					)
@@ -29597,10 +29666,272 @@ var myInfoComponent = function (_React$Component) {
 		}
 	}]);
 
-	return myInfoComponent;
+	return AboutMeComponent;
 }(_react2.default.Component);
 
-exports.default = myInfoComponent;
+exports.default = AboutMeComponent;
+
+/***/ }),
+/* 279 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Portfolio = function (_React$Component) {
+	_inherits(Portfolio, _React$Component);
+
+	function Portfolio() {
+		_classCallCheck(this, Portfolio);
+
+		return _possibleConstructorReturn(this, (Portfolio.__proto__ || Object.getPrototypeOf(Portfolio)).call(this));
+	}
+
+	_createClass(Portfolio, [{
+		key: "render",
+		value: function render() {
+
+			var divStyle = {
+				"textAlign": "center"
+			};
+
+			return _react2.default.createElement(
+				"section",
+				{ id: "portfolio" },
+				_react2.default.createElement(
+					"div",
+					null,
+					_react2.default.createElement(
+						"div",
+						{ className: "row-portfolio" },
+						_react2.default.createElement(
+							"div",
+							{ className: "text-center" },
+							_react2.default.createElement(
+								"h2",
+								{ className: "h2-portfolio" },
+								"My Portfolio"
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "text-center" },
+							_react2.default.createElement(
+								"div",
+								{ className: "container" },
+								_react2.default.createElement(
+									"div",
+									{ className: "row" },
+									_react2.default.createElement(
+										"div",
+										{ className: "col-md-12" },
+										_react2.default.createElement("hr", { className: "star-light" })
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "col-lg-6" },
+							_react2.default.createElement(
+								"div",
+								{ className: "dtl26" },
+								_react2.default.createElement("img", { src: "/arrowStorm.png", alt: "" }),
+								_react2.default.createElement(
+									"div",
+									{ className: "dtl" },
+									_react2.default.createElement(
+										"h3",
+										null,
+										"Arrow Storm"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"Intense Online multiplayer arcade archery game",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Created a multiplayer game using Phaser, Sockets in the front-end and Sequelize/Express/NodeJs on the back-end",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Used sockets to set up multiple real-time game rooms for up to 4 players/game",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Reduced latency by re-creating the real-time gameplay on clients and minimizing socket communication",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Created a map editor, which allows users to create, customize and compete on maps of their own design",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null)
+									),
+									_react2.default.createElement(
+										"div",
+										{ className: "col-lg-12", style: divStyle },
+										_react2.default.createElement(
+											"a",
+											{ href: "http://arrowstorm.herokuapp.com/" },
+											"Play Now!"
+										),
+										_react2.default.createElement(
+											"a",
+											{ href: "https://github.com/Mojotatan/Arrowstorm" },
+											"GitHub"
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "col-lg-6" },
+							_react2.default.createElement(
+								"div",
+								{ className: "dtl26" },
+								_react2.default.createElement("img", { src: "/ballers.png", alt: "" }),
+								_react2.default.createElement(
+									"div",
+									{ className: "dtl" },
+									_react2.default.createElement(
+										"h3",
+										null,
+										"Ballers"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"E-commerce store for basketball merch",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Implemented using React/Redux on the front-end and Sequelize/Express/NodeJs on the back-end",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Setup authentication via local email/password and Google OAuth using passport.js",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Created a seamless process for adding items to cart, and billing and checkout",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Integrated SendGrid API for automated email notifications",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null)
+									),
+									_react2.default.createElement(
+										"div",
+										{ className: "col-lg-12", style: divStyle },
+										_react2.default.createElement(
+											"a",
+											{ href: "http://balers.herokuapp.com/" },
+											"Go Shop!"
+										),
+										_react2.default.createElement(
+											"a",
+											{ href: "https://github.com/Charlesincharge43/GraceShopperBallers" },
+											"GitHub"
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "col-lg-6" },
+							_react2.default.createElement(
+								"div",
+								{ className: "dtl26" },
+								_react2.default.createElement("img", { src: "/carTrivia.png", alt: "" }),
+								_react2.default.createElement(
+									"div",
+									{ className: "dtl" },
+									_react2.default.createElement(
+										"h3",
+										null,
+										"Auto-Trivia"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										" Single and multi-player online trivia game",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Used React/Redux on the front-end and Sequelize/Express/NodeJs on the back-end",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Added multiplayer functionality using sockets to allow effective communication between multiple clients",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null)
+									),
+									_react2.default.createElement(
+										"div",
+										{ className: "col-lg-12", style: divStyle },
+										_react2.default.createElement(
+											"a",
+											{ href: "https://github.com/nishmeht7/Auto-Trivia-" },
+											"GitHub"
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "col-lg-6" },
+							_react2.default.createElement(
+								"div",
+								{ className: "dtl26" },
+								_react2.default.createElement("img", { src: "/bitcoin.jpg", alt: "" }),
+								_react2.default.createElement(
+									"div",
+									{ className: "dtl" },
+									_react2.default.createElement(
+										"h3",
+										null,
+										"Blockchain Vs. Bitcoin"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"I gave a technical talk about Blockchain and Bitcoin. This you'll definitely understand - Check it out!"
+									),
+									_react2.default.createElement(
+										"div",
+										{ className: "col-lg-12", style: divStyle },
+										_react2.default.createElement(
+											"a",
+											{ href: "https://www.youtube.com/watch?v=D6j8RPvBccI&t=6s" },
+											"Watch Video!"
+										)
+									)
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Portfolio;
+}(_react2.default.Component);
+
+exports.default = Portfolio;
 
 /***/ })
 /******/ ]);

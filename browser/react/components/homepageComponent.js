@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export class homepageComponent extends React.Component {
+export class HomepageComponent extends React.Component {
 	constructor () {
 		super()
 	}
@@ -10,7 +10,7 @@ export class homepageComponent extends React.Component {
 		const { children } = this.props
 		return (
 			<div>
-				<nav className="navbar navbar-inverse">
+				<nav className="navbar navbar-inverse navbar-fixed-top">
 				    <div className="navbar-header">
 				        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" className="navbar-toggle">
 				            <span className="sr-only">Toggle navigation</span>
@@ -18,16 +18,15 @@ export class homepageComponent extends React.Component {
 				            <span className="icon-bar"></span>
 				            <span className="icon-bar"></span>
 				        </button>
-				        <a href="#" className="navbar-brand">Nishant Mehta</a>
+				        <a href="#me" className="navbar-brand">Nishant Mehta</a>
 				    </div>
 				    <div id="navbarCollapse" className="collapse navbar-collapse">
 				        <ul className="nav navbar-nav">
-				            <li className="active"><a href="#">Home</a></li>
-				            <li><a href="#">My Projects</a></li>
-				            <li><a href="#">Work Experience</a></li>
+				            <li><a href="#about">About Me</a></li>
+				            <li><a href="#portfolio">My Portfolio</a></li>
 				        </ul>
 				        <ul className="nav navbar-nav navbar-right">
-				            <li><a href="#">Interests</a></li>
+				            <li><a href="#interests">Interests</a></li>
 				        </ul>
 				    </div>
 				</nav>
@@ -49,6 +48,6 @@ function mapDispatch(state, ownProps){
 
 }
 
-const homepageContainer = connect(mapState, mapDispatch)(homepageComponent);
+const homepageContainer = connect(mapState, mapDispatch)(HomepageComponent);
 
 export default homepageContainer;
