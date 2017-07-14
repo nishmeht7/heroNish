@@ -11,7 +11,7 @@ export default class AboutMeComponent extends React.Component {
 			<div>
 				<div className="row-about">
 					<div className="text-center">
-						<h2 className="h2-aboutMe">About Me</h2>
+						<h2 id="about" className="h2-aboutMe">About Me</h2>
 					</div>
 					<div className="text-center">
 						<div className="container">

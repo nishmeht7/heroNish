@@ -10,7 +10,7 @@ export default class MyInfoComponent extends React.Component {
 	render () {
 		return (
 			<div>
-				<div className="row-main">
+				<div id="me" className="row-main">
 					<div>
 						<div className="img-circle">
 							<img src="/nish.jpg" className="rounded"/>
@@ -33,7 +33,7 @@ export default class MyInfoComponent extends React.Component {
 					</div>
 				</div>
 				<AboutMeComponent />
-				<Portfolio />
+				<Portfolio/>
 			</div>
 		)
 	}
