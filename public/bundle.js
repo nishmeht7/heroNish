@@ -29369,21 +29369,20 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 				null,
 				_react2.default.createElement(
 					"nav",
-					{ className: "navbar navbar-inverse navbar-fixed-top" },
+					{ className: "navbar navbar-inverse navbar-fixed-top navbar-custom" },
 					_react2.default.createElement(
 						"div",
-						{ className: "navbar-header" },
+						{ className: "navbar-header page-scroll" },
 						_react2.default.createElement(
 							"button",
-							{ type: "button", "data-target": "#navbarCollapse", "data-toggle": "collapse", className: "navbar-toggle" },
+							{ type: "button", "data-target": "#bs-example-navbar-collapse-1", "data-toggle": "collapse", className: "navbar-toggle" },
 							_react2.default.createElement(
 								"span",
 								{ className: "sr-only" },
 								"Toggle navigation"
 							),
-							_react2.default.createElement("span", { className: "icon-bar" }),
-							_react2.default.createElement("span", { className: "icon-bar" }),
-							_react2.default.createElement("span", { className: "icon-bar" })
+							" Menu ",
+							_react2.default.createElement("i", { className: "fa fa-bars" })
 						),
 						_react2.default.createElement(
 							"a",

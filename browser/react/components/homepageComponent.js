@@ -10,13 +10,10 @@ export class HomepageComponent extends React.Component {
 		const { children } = this.props
 		return (
 			<div>
-				<nav className="navbar navbar-inverse navbar-fixed-top">
-				    <div className="navbar-header">
-				        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" className="navbar-toggle">
-				            <span className="sr-only">Toggle navigation</span>
-				            <span className="icon-bar"></span>
-				            <span className="icon-bar"></span>
-				            <span className="icon-bar"></span>
+				<nav className="navbar navbar-inverse navbar-fixed-top navbar-custom">
+				    <div className="navbar-header page-scroll">
+				        <button type="button" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" className="navbar-toggle">
+				            <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
 				        </button>
 				        <a href="#me" className="navbar-brand">Nishant Mehta</a>
 				    </div>
