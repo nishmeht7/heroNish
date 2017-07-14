@@ -29495,58 +29495,62 @@ var MyInfoComponent = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				'div',
-				null,
+				'section',
+				{ id: 'me' },
 				_react2.default.createElement(
 					'div',
-					{ id: 'me', className: 'row-main' },
+					null,
 					_react2.default.createElement(
 						'div',
-						null,
+						{ className: 'row-main' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'img-circle' },
-							_react2.default.createElement('img', { src: '/nish.jpg', className: 'rounded' })
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'text-center' },
-						_react2.default.createElement(
-							'h2',
 							null,
-							'Nishant Mehta'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'text-center' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'container' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'row' },
+								{ className: 'img-circle' },
+								_react2.default.createElement('img', { src: '/nish.jpg', className: 'rounded' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'text-center' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Nishant Mehta'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'text-center' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'container' },
 								_react2.default.createElement(
 									'div',
-									{ className: 'col-md-12' },
-									_react2.default.createElement('hr', { className: 'star-light' })
+									{ className: 'row' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'col-md-12' },
+										_react2.default.createElement('hr', { className: 'star-light' })
+									)
 								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'text-center' },
+							_react2.default.createElement(
+								'h3',
+								null,
+								'FullStack Javascript Developer'
 							)
 						)
 					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'text-center' },
-						_react2.default.createElement(
-							'h3',
-							null,
-							'FullStack Javascript Developer'
-						)
-					)
-				),
-				_react2.default.createElement(_aboutMeComponent2.default, null),
-				_react2.default.createElement(_Portfolio2.default, null)
+					_react2.default.createElement(_aboutMeComponent2.default, null),
+					_react2.default.createElement(_Portfolio2.default, null)
+				)
 			);
 		}
 	}]);
@@ -29594,63 +29598,67 @@ var AboutMeComponent = function (_React$Component) {
 		key: "render",
 		value: function render() {
 			return _react2.default.createElement(
-				"div",
-				null,
+				"section",
+				{ id: "about" },
 				_react2.default.createElement(
 					"div",
-					{ className: "row-about" },
+					null,
 					_react2.default.createElement(
 						"div",
-						{ className: "text-center" },
-						_react2.default.createElement(
-							"h2",
-							{ id: "about", className: "h2-aboutMe" },
-							"About Me"
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "text-center" },
+						{ className: "row-about" },
 						_react2.default.createElement(
 							"div",
-							{ className: "container" },
+							{ className: "text-center" },
+							_react2.default.createElement(
+								"h2",
+								{ className: "h2-aboutMe" },
+								"About Me"
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "text-center" },
 							_react2.default.createElement(
 								"div",
-								{ className: "row" },
+								{ className: "container" },
 								_react2.default.createElement(
 									"div",
-									{ className: "col-md-12" },
-									_react2.default.createElement("hr", { className: "star-primary" })
+									{ className: "row" },
+									_react2.default.createElement(
+										"div",
+										{ className: "col-md-12" },
+										_react2.default.createElement("hr", { className: "star-primary" })
+									)
 								)
 							)
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "col-md-6" },
+						),
 						_react2.default.createElement(
 							"div",
-							{ className: "aboutText" },
+							{ className: "col-md-6" },
 							_react2.default.createElement(
-								"p",
-								null,
-								"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except ofcourse jumping from a plane at 20,000 feet above the palm islands in Dubai!",
-								_react2.default.createElement("br", null),
-								"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
-								_react2.default.createElement("br", null),
-								"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
-								_react2.default.createElement("br", null),
-								"HIRE ME!!!!!"
+								"div",
+								{ className: "aboutText" },
+								_react2.default.createElement(
+									"p",
+									null,
+									"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except ofcourse jumping from a plane at 20,000 feet above the palm islands in Dubai!",
+									_react2.default.createElement("br", null),
+									"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
+									_react2.default.createElement("br", null),
+									"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
+									_react2.default.createElement("br", null),
+									"HIRE ME!!!!!"
+								)
 							)
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "col-md-offset-6" },
+						),
 						_react2.default.createElement(
 							"div",
-							{ className: "nishPicDiv" },
-							_react2.default.createElement("img", { src: "/skydive.png", className: "nishImg" })
+							{ className: "col-md-offset-6" },
+							_react2.default.createElement(
+								"div",
+								{ className: "nishPicDiv" },
+								_react2.default.createElement("img", { src: "/skydive.png", className: "nishImg" })
+							)
 						)
 					)
 				)
@@ -29702,210 +29710,214 @@ var Portfolio = function (_React$Component) {
 		value: function render() {
 
 			var divStyle = {
-				"text-align": "center"
+				"textAlign": "center"
 			};
 
 			return _react2.default.createElement(
-				"div",
-				null,
+				"section",
+				{ id: "portfolio" },
 				_react2.default.createElement(
 					"div",
-					{ className: "row-portfolio" },
+					null,
 					_react2.default.createElement(
 						"div",
-						{ className: "text-center" },
-						_react2.default.createElement(
-							"h2",
-							{ className: "h2-portfolio" },
-							"My Portfolio"
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "text-center" },
+						{ className: "row-portfolio" },
 						_react2.default.createElement(
 							"div",
-							{ className: "container" },
+							{ className: "text-center" },
+							_react2.default.createElement(
+								"h2",
+								{ className: "h2-portfolio" },
+								"My Portfolio"
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "text-center" },
 							_react2.default.createElement(
 								"div",
-								{ className: "row" },
+								{ className: "container" },
 								_react2.default.createElement(
 									"div",
-									{ className: "col-md-12" },
-									_react2.default.createElement("hr", { className: "star-light" })
+									{ className: "row" },
+									_react2.default.createElement(
+										"div",
+										{ className: "col-md-12" },
+										_react2.default.createElement("hr", { className: "star-light" })
+									)
 								)
 							)
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "col-lg-6" },
+						),
 						_react2.default.createElement(
 							"div",
-							{ className: "dtl26" },
-							_react2.default.createElement("img", { src: "/arrowStorm.png", alt: "" }),
+							{ className: "col-lg-6" },
 							_react2.default.createElement(
 								"div",
-								{ className: "dtl" },
-								_react2.default.createElement(
-									"h3",
-									null,
-									"Arrow Storm"
-								),
-								_react2.default.createElement(
-									"p",
-									null,
-									"Intense Online multiplayer arcade archery game",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Created a multiplayer game using Phaser, Sockets in the front-end and Sequelize/Express/NodeJs on the back-end",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Used sockets to set up multiple real-time game rooms for up to 4 players/game",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Reduced latency by re-creating the real-time gameplay on clients and minimizing socket communication",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Created a map editor, which allows users to create, customize and compete on maps of their own design",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null)
-								),
+								{ className: "dtl26" },
+								_react2.default.createElement("img", { src: "/arrowStorm.png", alt: "" }),
 								_react2.default.createElement(
 									"div",
-									{ className: "col-lg-12", style: divStyle },
+									{ className: "dtl" },
 									_react2.default.createElement(
-										"a",
-										{ href: "http://arrowstorm.herokuapp.com/" },
-										"Play Now!"
+										"h3",
+										null,
+										"Arrow Storm"
 									),
 									_react2.default.createElement(
-										"a",
-										{ href: "https://github.com/Mojotatan/Arrowstorm" },
-										"GitHub"
-									)
-								)
-							)
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "col-lg-6" },
-						_react2.default.createElement(
-							"div",
-							{ className: "dtl26" },
-							_react2.default.createElement("img", { src: "/ballers.png", alt: "" }),
-							_react2.default.createElement(
-								"div",
-								{ className: "dtl" },
-								_react2.default.createElement(
-									"h3",
-									null,
-									"Ballers"
-								),
-								_react2.default.createElement(
-									"p",
-									null,
-									"E-commerce store for basketball merch",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Implemented using React/Redux on the front-end and Sequelize/Express/NodeJs on the back-end",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Setup authentication via local email/password and Google OAuth using passport.js",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Created a seamless process for adding items to cart, and billing and checkout",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Integrated SendGrid API for automated email notifications",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null)
-								),
-								_react2.default.createElement(
-									"div",
-									{ className: "col-lg-12", style: divStyle },
-									_react2.default.createElement(
-										"a",
-										{ href: "http://balers.herokuapp.com/" },
-										"Go Shop!"
+										"p",
+										null,
+										"Intense Online multiplayer arcade archery game",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Created a multiplayer game using Phaser, Sockets in the front-end and Sequelize/Express/NodeJs on the back-end",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Used sockets to set up multiple real-time game rooms for up to 4 players/game",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Reduced latency by re-creating the real-time gameplay on clients and minimizing socket communication",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Created a map editor, which allows users to create, customize and compete on maps of their own design",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null)
 									),
 									_react2.default.createElement(
-										"a",
-										{ href: "https://github.com/Charlesincharge43/GraceShopperBallers" },
-										"GitHub"
+										"div",
+										{ className: "col-lg-12", style: divStyle },
+										_react2.default.createElement(
+											"a",
+											{ href: "http://arrowstorm.herokuapp.com/" },
+											"Play Now!"
+										),
+										_react2.default.createElement(
+											"a",
+											{ href: "https://github.com/Mojotatan/Arrowstorm" },
+											"GitHub"
+										)
 									)
 								)
 							)
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "col-lg-6" },
+						),
 						_react2.default.createElement(
 							"div",
-							{ className: "dtl26" },
-							_react2.default.createElement("img", { src: "/carTrivia.png", alt: "" }),
+							{ className: "col-lg-6" },
 							_react2.default.createElement(
 								"div",
-								{ className: "dtl" },
-								_react2.default.createElement(
-									"h3",
-									null,
-									"Auto-Trivia"
-								),
-								_react2.default.createElement(
-									"p",
-									null,
-									" Single and multi-player online trivia game",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Used React/Redux on the front-end and Sequelize/Express/NodeJs on the back-end",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null),
-									"\u2022 Added multiplayer functionality using sockets to allow effective communication between multiple clients",
-									_react2.default.createElement("br", null),
-									_react2.default.createElement("br", null)
-								),
+								{ className: "dtl26" },
+								_react2.default.createElement("img", { src: "/ballers.png", alt: "" }),
 								_react2.default.createElement(
 									"div",
-									{ className: "col-lg-12", style: divStyle },
+									{ className: "dtl" },
 									_react2.default.createElement(
-										"a",
-										{ href: "https://github.com/nishmeht7/Auto-Trivia-" },
-										"GitHub"
+										"h3",
+										null,
+										"Ballers"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"E-commerce store for basketball merch",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Implemented using React/Redux on the front-end and Sequelize/Express/NodeJs on the back-end",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Setup authentication via local email/password and Google OAuth using passport.js",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Created a seamless process for adding items to cart, and billing and checkout",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Integrated SendGrid API for automated email notifications",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null)
+									),
+									_react2.default.createElement(
+										"div",
+										{ className: "col-lg-12", style: divStyle },
+										_react2.default.createElement(
+											"a",
+											{ href: "http://balers.herokuapp.com/" },
+											"Go Shop!"
+										),
+										_react2.default.createElement(
+											"a",
+											{ href: "https://github.com/Charlesincharge43/GraceShopperBallers" },
+											"GitHub"
+										)
 									)
 								)
 							)
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "col-lg-6" },
+						),
 						_react2.default.createElement(
 							"div",
-							{ className: "dtl26" },
-							_react2.default.createElement("img", { src: "/bitcoin.jpg", alt: "" }),
+							{ className: "col-lg-6" },
 							_react2.default.createElement(
 								"div",
-								{ className: "dtl" },
-								_react2.default.createElement(
-									"h3",
-									null,
-									"Blockchain Vs. Bitcoin"
-								),
-								_react2.default.createElement(
-									"p",
-									null,
-									"I gave a technical talk about Blockchain and Bitcoin. This you'll definitely understand - Check it out!"
-								),
+								{ className: "dtl26" },
+								_react2.default.createElement("img", { src: "/carTrivia.png", alt: "" }),
 								_react2.default.createElement(
 									"div",
-									{ className: "col-lg-12", style: divStyle },
+									{ className: "dtl" },
 									_react2.default.createElement(
-										"a",
-										{ href: "https://www.youtube.com/watch?v=D6j8RPvBccI&t=6s" },
-										"Watch Video!"
+										"h3",
+										null,
+										"Auto-Trivia"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										" Single and multi-player online trivia game",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Used React/Redux on the front-end and Sequelize/Express/NodeJs on the back-end",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null),
+										"\u2022 Added multiplayer functionality using sockets to allow effective communication between multiple clients",
+										_react2.default.createElement("br", null),
+										_react2.default.createElement("br", null)
+									),
+									_react2.default.createElement(
+										"div",
+										{ className: "col-lg-12", style: divStyle },
+										_react2.default.createElement(
+											"a",
+											{ href: "https://github.com/nishmeht7/Auto-Trivia-" },
+											"GitHub"
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "col-lg-6" },
+							_react2.default.createElement(
+								"div",
+								{ className: "dtl26" },
+								_react2.default.createElement("img", { src: "/bitcoin.jpg", alt: "" }),
+								_react2.default.createElement(
+									"div",
+									{ className: "dtl" },
+									_react2.default.createElement(
+										"h3",
+										null,
+										"Blockchain Vs. Bitcoin"
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"I gave a technical talk about Blockchain and Bitcoin. This you'll definitely understand - Check it out!"
+									),
+									_react2.default.createElement(
+										"div",
+										{ className: "col-lg-12", style: divStyle },
+										_react2.default.createElement(
+											"a",
+											{ href: "https://www.youtube.com/watch?v=D6j8RPvBccI&t=6s" },
+											"Watch Video!"
+										)
 									)
 								)
 							)
