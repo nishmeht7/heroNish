@@ -29395,7 +29395,7 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 						{ id: "navbarCollapse", className: "collapse navbar-collapse" },
 						_react2.default.createElement(
 							"ul",
-							{ className: "nav navbar-nav" },
+							{ className: "nav navbar-nav navbar-right" },
 							_react2.default.createElement(
 								"li",
 								null,
@@ -29412,28 +29412,6 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 									"a",
 									{ href: "#portfolio" },
 									"My Portfolio"
-								)
-							)
-						),
-						_react2.default.createElement(
-							"ul",
-							{ className: "nav navbar-nav navbar-right" },
-							_react2.default.createElement(
-								"li",
-								null,
-								_react2.default.createElement(
-									"a",
-									{ href: "#interests" },
-									"Interests"
-								)
-							),
-							_react2.default.createElement(
-								"li",
-								null,
-								_react2.default.createElement(
-									"a",
-									{ href: "#interests" },
-									"Interests"
 								)
 							),
 							_react2.default.createElement(
@@ -29490,6 +29468,10 @@ var _aboutMeComponent2 = _interopRequireDefault(_aboutMeComponent);
 var _Portfolio = __webpack_require__(279);
 
 var _Portfolio2 = _interopRequireDefault(_Portfolio);
+
+var _InterestsComponent = __webpack_require__(280);
+
+var _InterestsComponent2 = _interopRequireDefault(_InterestsComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29566,7 +29548,8 @@ var MyInfoComponent = function (_React$Component) {
 						)
 					),
 					_react2.default.createElement(_aboutMeComponent2.default, null),
-					_react2.default.createElement(_Portfolio2.default, null)
+					_react2.default.createElement(_Portfolio2.default, null),
+					_react2.default.createElement(_InterestsComponent2.default, null)
 				)
 			);
 		}
@@ -29616,7 +29599,7 @@ var AboutMeComponent = function (_React$Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				"section",
-				{ "class": "success", id: "about" },
+				{ className: "success", id: "about" },
 				_react2.default.createElement(
 					"div",
 					null,
@@ -29949,6 +29932,64 @@ var Portfolio = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Portfolio;
+
+/***/ }),
+/* 280 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Interests = function (_React$Component) {
+	_inherits(Interests, _React$Component);
+
+	function Interests() {
+		_classCallCheck(this, Interests);
+
+		return _possibleConstructorReturn(this, (Interests.__proto__ || Object.getPrototypeOf(Interests)).call(this));
+	}
+
+	_createClass(Interests, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"section",
+				{ id: "interests" },
+				_react2.default.createElement(
+					"div",
+					{ className: "row-interests" },
+					_react2.default.createElement(
+						"h1",
+						null,
+						"My Interests"
+					)
+				)
+			);
+		}
+	}]);
+
+	return Interests;
+}(_react2.default.Component);
+
+exports.default = Interests;
 
 /***/ })
 /******/ ]);

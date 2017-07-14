@@ -8,7 +8,7 @@ export default class AboutMeComponent extends React.Component {
 
 	render() {
 		return (
-			<section class="success" id="about">
+			<section className="success" id="about">
 				<div>
 					<div className="row-about">
 						<div className="text-center">

@@ -18,13 +18,9 @@ export class HomepageComponent extends React.Component {
 				        <a href="#me" className="navbar-brand">Nishant Mehta</a>
 				    </div>
 				    <div id="navbarCollapse" className="collapse navbar-collapse">
-				        <ul className="nav navbar-nav">
+				        <ul className="nav navbar-nav navbar-right">
 				            <li><a href="#about">About Me</a></li>
 				            <li><a href="#portfolio">My Portfolio</a></li>
-				        </ul>
-				        <ul className="nav navbar-nav navbar-right">
-				            <li><a href="#interests">Interests</a></li>
-				            <li><a href="#interests">Interests</a></li>
 				            <li><a href="#interests">Interests</a></li>
 				        </ul>
 				    </div>

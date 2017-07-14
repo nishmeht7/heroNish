@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutMeComponent from './aboutMeComponent';
 import Portfolio from './Portfolio';
+import Interests from './InterestsComponent';
 
 export default class MyInfoComponent extends React.Component {
 	constructor(){
@@ -35,6 +36,7 @@ export default class MyInfoComponent extends React.Component {
 					</div>
 					<AboutMeComponent />
 					<Portfolio/>
+					<Interests/>
 				</div>
 			</section>
 		)
