@@ -29426,6 +29426,24 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 									{ href: "#interests" },
 									"Interests"
 								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#interests" },
+									"Interests"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#interests" },
+									"Interests"
+								)
 							)
 						)
 					)
@@ -29598,7 +29616,7 @@ var AboutMeComponent = function (_React$Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				"section",
-				{ id: "about" },
+				{ "class": "success", id: "about" },
 				_react2.default.createElement(
 					"div",
 					null,

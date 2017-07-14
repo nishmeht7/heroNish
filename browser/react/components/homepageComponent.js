@@ -24,6 +24,8 @@ export class HomepageComponent extends React.Component {
 				        </ul>
 				        <ul className="nav navbar-nav navbar-right">
 				            <li><a href="#interests">Interests</a></li>
+				            <li><a href="#interests">Interests</a></li>
+				            <li><a href="#interests">Interests</a></li>
 				        </ul>
 				    </div>
 				</nav>
