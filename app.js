@@ -24,7 +24,7 @@ app.get('/*', function(req, res){
 })
 
 //listening on port 3005
-const server = app.listen(3005, function(){
+const server = app.listen(process.env.PORT || 3005, function(){
 		console.log('listening on 3005');
 })
 
