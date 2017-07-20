@@ -29648,8 +29648,12 @@ var AboutMeComponent = function (_React$Component) {
 									_react2.default.createElement(
 										"p",
 										null,
-										"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except ofcourse jumping from a plane at 20,000 feet above the palm islands in Dubai!",
-										_react2.default.createElement("br", null),
+										"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except of course jumping from a plane at 20,000 feet above the palm islands in Dubai!",
+										_react2.default.createElement("br", null)
+									),
+									_react2.default.createElement(
+										"p",
+										null,
 										"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
 										_react2.default.createElement("br", null),
 										"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
