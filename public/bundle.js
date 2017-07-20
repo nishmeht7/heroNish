@@ -30075,7 +30075,7 @@ var FooterComponent = function (_React$Component) {
 									null,
 									_react2.default.createElement(
 										"a",
-										{ href: "#", className: "btn-social btn-outline" },
+										{ href: "https://www.linkedin.com/in/mrnishantmehta/", className: "btn-social btn-outline", target: "_blank" },
 										_react2.default.createElement(
 											"span",
 											{ className: "sr-only" },
@@ -30089,7 +30089,7 @@ var FooterComponent = function (_React$Component) {
 									null,
 									_react2.default.createElement(
 										"a",
-										{ href: "#", className: "btn-social btn-outline" },
+										{ href: "https://github.com/nishmeht7", className: "btn-social btn-outline", target: "_blank" },
 										_react2.default.createElement(
 											"span",
 											{ className: "sr-only" },
