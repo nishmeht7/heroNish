@@ -29473,6 +29473,10 @@ var _InterestsComponent = __webpack_require__(280);
 
 var _InterestsComponent2 = _interopRequireDefault(_InterestsComponent);
 
+var _Footer = __webpack_require__(281);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29549,7 +29553,7 @@ var MyInfoComponent = function (_React$Component) {
 					),
 					_react2.default.createElement(_aboutMeComponent2.default, null),
 					_react2.default.createElement(_Portfolio2.default, null),
-					_react2.default.createElement(_InterestsComponent2.default, null)
+					_react2.default.createElement(_Footer2.default, null)
 				)
 			);
 		}
@@ -29990,6 +29994,131 @@ var Interests = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Interests;
+
+/***/ }),
+/* 281 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FooterComponent = function (_React$Component) {
+	_inherits(FooterComponent, _React$Component);
+
+	function FooterComponent() {
+		_classCallCheck(this, FooterComponent);
+
+		return _possibleConstructorReturn(this, (FooterComponent.__proto__ || Object.getPrototypeOf(FooterComponent)).call(this));
+	}
+
+	_createClass(FooterComponent, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"div",
+				null,
+				_react2.default.createElement(
+					"div",
+					{ className: "row-footer" },
+					_react2.default.createElement(
+						"div",
+						{ className: "col-md-4" },
+						_react2.default.createElement(
+							"div",
+							{ className: "location-footer" },
+							_react2.default.createElement(
+								"h1",
+								null,
+								"Location"
+							),
+							_react2.default.createElement(
+								"p",
+								null,
+								"San Francisco, CA"
+							)
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "col-md-4" },
+						_react2.default.createElement(
+							"div",
+							{ className: "location-footer" },
+							_react2.default.createElement(
+								"h1",
+								null,
+								"Stalk Me Here"
+							),
+							_react2.default.createElement(
+								"ul",
+								{ className: "list-inline" },
+								_react2.default.createElement(
+									"li",
+									null,
+									_react2.default.createElement(
+										"a",
+										{ href: "#", className: "btn-social btn-outline" },
+										_react2.default.createElement(
+											"span",
+											{ className: "sr-only" },
+											"Linked In"
+										),
+										_react2.default.createElement("i", { className: "fa fa-fw fa-linkedin" })
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									null,
+									"GitHub"
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "col-md-4" },
+						_react2.default.createElement(
+							"div",
+							{ className: "location-footer" },
+							_react2.default.createElement(
+								"h1",
+								null,
+								"Resume"
+							),
+							_react2.default.createElement(
+								"p",
+								null,
+								"San Francisco, CA"
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return FooterComponent;
+}(_react2.default.Component);
+
+exports.default = FooterComponent;
 
 /***/ })
 /******/ ]);
