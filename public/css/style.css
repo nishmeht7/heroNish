@@ -177,7 +177,7 @@ h3 {
 
 .row-about {
 	background-color: #ffffff;
-	height: 100vh;
+	/*height: 100vh;*/
     overflow: auto;
 }
 
@@ -205,7 +205,7 @@ h3 {
 
 .row-portfolio {
     background-color: #18BC9C;
-    height: 100vh;
+    /*height: 100vh;*/
     overflow: auto;
 }
 
