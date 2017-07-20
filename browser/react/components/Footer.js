@@ -7,12 +7,12 @@ export default class FooterComponent extends React.Component {
 
 	render () {
 		return (
-			<div>
+			<section id="connect">
 				<div className ="row-footer">
 					<div className="col-md-4">
 						<div className="location-footer">
 							<h1>Location</h1>
-							<p>San Francisco, CA</p>
+							<p className="footer-p">San Francisco, CA</p>
 						</div>
 					</div> 
 					<div className="col-md-4">
@@ -31,17 +31,24 @@ export default class FooterComponent extends React.Component {
 		                                <i className="fa fa-fw fa-github"/>
 	                                </a>
 	                            </li>
+	                            <li>
+									<a href="mailto:nishmeht7@gmail.com" className="btn-social btn-outline" target="_blank">
+		                                <span className="sr-only">Email</span>
+		                                <i className="fa fa-fw fa-envelope"/>
+	                                </a>
+	                            </li>
 							</ul>
+							<p className="footer-p">Don't be shy, say HI! </p>
 						</div>
 					</div> 
 					<div className="col-md-4">
 						<div className="location-footer">
 							<h1>Resume</h1>
-							<p>San Francisco, CA</p>
+							<p className="footer-p">Click <a href="/NishantMehta.pdf" target="_blank">here</a> to view</p>
 						</div>
 					</div> 
 				</div>
-			</div>
+			</section>
 		)
 	}
 }

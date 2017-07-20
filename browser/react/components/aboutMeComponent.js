@@ -23,6 +23,7 @@ export default class AboutMeComponent extends React.Component {
 						        </div>
 						    </div>
 						</div>
+						<div className="about-section">
 						<div className="col-md-6">
 						<div className="aboutText">
 							<p>
@@ -41,7 +42,7 @@ export default class AboutMeComponent extends React.Component {
 							<img src="/skydive.png" className="nishImg"/>
 							</div>
 						</div>
-
+						</div>
 					</div>
 				</div>
 			</section>

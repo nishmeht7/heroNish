@@ -189,6 +189,10 @@ h3 {
 
 }
 
+.about-section {
+    
+}
+
 .nishPicDiv {
     display: block;
 }
@@ -331,6 +335,10 @@ h3 {
     text-align: center;
     padding-top: 25px; 
     font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.footer-p {
+    font-size: 16px;
 }
 
 .location-footer {

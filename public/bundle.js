@@ -29419,8 +29419,8 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 								null,
 								_react2.default.createElement(
 									"a",
-									{ href: "#interests" },
-									"Interests"
+									{ href: "#connect" },
+									"Let's Connect!"
 								)
 							)
 						)
@@ -29638,30 +29638,34 @@ var AboutMeComponent = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							"div",
-							{ className: "col-md-6" },
+							{ className: "about-section" },
 							_react2.default.createElement(
 								"div",
-								{ className: "aboutText" },
+								{ className: "col-md-6" },
 								_react2.default.createElement(
-									"p",
-									null,
-									"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except ofcourse jumping from a plane at 20,000 feet above the palm islands in Dubai!",
-									_react2.default.createElement("br", null),
-									"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
-									_react2.default.createElement("br", null),
-									"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
-									_react2.default.createElement("br", null),
-									"HIRE ME!!!!!"
+									"div",
+									{ className: "aboutText" },
+									_react2.default.createElement(
+										"p",
+										null,
+										"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except ofcourse jumping from a plane at 20,000 feet above the palm islands in Dubai!",
+										_react2.default.createElement("br", null),
+										"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
+										_react2.default.createElement("br", null),
+										"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
+										_react2.default.createElement("br", null),
+										"HIRE ME!!!!!"
+									)
 								)
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ className: "col-md-offset-6" },
+							),
 							_react2.default.createElement(
 								"div",
-								{ className: "nishPicDiv" },
-								_react2.default.createElement("img", { src: "/skydive.png", className: "nishImg" })
+								{ className: "col-md-offset-6" },
+								_react2.default.createElement(
+									"div",
+									{ className: "nishPicDiv" },
+									_react2.default.createElement("img", { src: "/skydive.png", className: "nishImg" })
+								)
 							)
 						)
 					)
@@ -30033,8 +30037,8 @@ var FooterComponent = function (_React$Component) {
 		key: "render",
 		value: function render() {
 			return _react2.default.createElement(
-				"div",
-				null,
+				"section",
+				{ id: "connect" },
 				_react2.default.createElement(
 					"div",
 					{ className: "row-footer" },
@@ -30051,7 +30055,7 @@ var FooterComponent = function (_React$Component) {
 							),
 							_react2.default.createElement(
 								"p",
-								null,
+								{ className: "footer-p" },
 								"San Francisco, CA"
 							)
 						)
@@ -30097,7 +30101,26 @@ var FooterComponent = function (_React$Component) {
 										),
 										_react2.default.createElement("i", { className: "fa fa-fw fa-github" })
 									)
+								),
+								_react2.default.createElement(
+									"li",
+									null,
+									_react2.default.createElement(
+										"a",
+										{ href: "mailto:nishmeht7@gmail.com", className: "btn-social btn-outline", target: "_blank" },
+										_react2.default.createElement(
+											"span",
+											{ className: "sr-only" },
+											"Email"
+										),
+										_react2.default.createElement("i", { className: "fa fa-fw fa-envelope" })
+									)
 								)
+							),
+							_react2.default.createElement(
+								"p",
+								{ className: "footer-p" },
+								"Don't be shy, say HI! "
 							)
 						)
 					),
@@ -30114,8 +30137,14 @@ var FooterComponent = function (_React$Component) {
 							),
 							_react2.default.createElement(
 								"p",
-								null,
-								"San Francisco, CA"
+								{ className: "footer-p" },
+								"Click ",
+								_react2.default.createElement(
+									"a",
+									{ href: "/NishantMehta.pdf", target: "_blank" },
+									"here"
+								),
+								" to view"
 							)
 						)
 					)

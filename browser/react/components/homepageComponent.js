@@ -21,7 +21,7 @@ export class HomepageComponent extends React.Component {
 				        <ul className="nav navbar-nav navbar-right">
 				            <li><a href="#about">About Me</a></li>
 				            <li><a href="#portfolio">My Portfolio</a></li>
-				            <li><a href="#interests">Interests</a></li>
+				            <li><a href="#connect">Let's Connect!</a></li>
 				        </ul>
 				    </div>
 				</nav>
