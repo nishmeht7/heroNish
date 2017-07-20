@@ -20,11 +20,17 @@ export default class FooterComponent extends React.Component {
 							<h1>Stalk Me Here</h1>
 							<ul className="list-inline">
 								<li>
-                                <a href="#" className="btn-social btn-outline">
-                                <span className="sr-only">Linked In</span>
-                                <i className="fa fa-fw fa-linkedin"/></a>
-                            </li>
-								<li>GitHub</li>
+	                                <a href="#" className="btn-social btn-outline">
+		                                <span className="sr-only">Linked In</span>
+		                                <i className="fa fa-fw fa-linkedin"/>
+	                                </a>
+	                            </li>
+	                            <li>
+									<a href="#" className="btn-social btn-outline">
+		                                <span className="sr-only">GitHub</span>
+		                                <i className="fa fa-fw fa-github"/>
+	                                </a>
+	                            </li>
 							</ul>
 						</div>
 					</div> 

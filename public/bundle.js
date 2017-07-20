@@ -30087,7 +30087,16 @@ var FooterComponent = function (_React$Component) {
 								_react2.default.createElement(
 									"li",
 									null,
-									"GitHub"
+									_react2.default.createElement(
+										"a",
+										{ href: "#", className: "btn-social btn-outline" },
+										_react2.default.createElement(
+											"span",
+											{ className: "sr-only" },
+											"GitHub"
+										),
+										_react2.default.createElement("i", { className: "fa fa-fw fa-github" })
+									)
 								)
 							)
 						)
