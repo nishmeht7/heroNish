@@ -29369,21 +29369,20 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 				null,
 				_react2.default.createElement(
 					"nav",
-					{ className: "navbar navbar-inverse navbar-fixed-top" },
+					{ className: "navbar navbar-inverse navbar-fixed-top navbar-custom" },
 					_react2.default.createElement(
 						"div",
-						{ className: "navbar-header" },
+						{ className: "navbar-header page-scroll" },
 						_react2.default.createElement(
 							"button",
-							{ type: "button", "data-target": "#navbarCollapse", "data-toggle": "collapse", className: "navbar-toggle" },
+							{ type: "button", "data-target": "#bs-example-navbar-collapse-1", "data-toggle": "collapse", className: "navbar-toggle" },
 							_react2.default.createElement(
 								"span",
 								{ className: "sr-only" },
 								"Toggle navigation"
 							),
-							_react2.default.createElement("span", { className: "icon-bar" }),
-							_react2.default.createElement("span", { className: "icon-bar" }),
-							_react2.default.createElement("span", { className: "icon-bar" })
+							" Menu ",
+							_react2.default.createElement("i", { className: "fa fa-bars" })
 						),
 						_react2.default.createElement(
 							"a",
@@ -29396,7 +29395,7 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 						{ id: "navbarCollapse", className: "collapse navbar-collapse" },
 						_react2.default.createElement(
 							"ul",
-							{ className: "nav navbar-nav" },
+							{ className: "nav navbar-nav navbar-right" },
 							_react2.default.createElement(
 								"li",
 								null,
@@ -29414,18 +29413,14 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 									{ href: "#portfolio" },
 									"My Portfolio"
 								)
-							)
-						),
-						_react2.default.createElement(
-							"ul",
-							{ className: "nav navbar-nav navbar-right" },
+							),
 							_react2.default.createElement(
 								"li",
 								null,
 								_react2.default.createElement(
 									"a",
-									{ href: "#interests" },
-									"Interests"
+									{ href: "#connect" },
+									"Let's Connect!"
 								)
 							)
 						)
@@ -29473,6 +29468,14 @@ var _aboutMeComponent2 = _interopRequireDefault(_aboutMeComponent);
 var _Portfolio = __webpack_require__(279);
 
 var _Portfolio2 = _interopRequireDefault(_Portfolio);
+
+var _InterestsComponent = __webpack_require__(280);
+
+var _InterestsComponent2 = _interopRequireDefault(_InterestsComponent);
+
+var _Footer = __webpack_require__(281);
+
+var _Footer2 = _interopRequireDefault(_Footer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29549,7 +29552,8 @@ var MyInfoComponent = function (_React$Component) {
 						)
 					),
 					_react2.default.createElement(_aboutMeComponent2.default, null),
-					_react2.default.createElement(_Portfolio2.default, null)
+					_react2.default.createElement(_Portfolio2.default, null),
+					_react2.default.createElement(_Footer2.default, null)
 				)
 			);
 		}
@@ -29599,7 +29603,7 @@ var AboutMeComponent = function (_React$Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				"section",
-				{ id: "about" },
+				{ className: "success", id: "about" },
 				_react2.default.createElement(
 					"div",
 					null,
@@ -29634,30 +29638,38 @@ var AboutMeComponent = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							"div",
-							{ className: "col-md-6" },
+							{ className: "about-section" },
 							_react2.default.createElement(
 								"div",
-								{ className: "aboutText" },
+								{ className: "col-md-6" },
 								_react2.default.createElement(
-									"p",
-									null,
-									"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except ofcourse jumping from a plane at 20,000 feet above the palm islands in Dubai!",
-									_react2.default.createElement("br", null),
-									"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
-									_react2.default.createElement("br", null),
-									"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
-									_react2.default.createElement("br", null),
-									"HIRE ME!!!!!"
+									"div",
+									{ className: "aboutText" },
+									_react2.default.createElement(
+										"p",
+										null,
+										"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except of course jumping from a plane at 20,000 feet above the palm islands in Dubai!",
+										_react2.default.createElement("br", null)
+									),
+									_react2.default.createElement(
+										"p",
+										null,
+										"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
+										_react2.default.createElement("br", null),
+										"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
+										_react2.default.createElement("br", null),
+										"HIRE ME!!!!!"
+									)
 								)
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ className: "col-md-offset-6" },
+							),
 							_react2.default.createElement(
 								"div",
-								{ className: "nishPicDiv" },
-								_react2.default.createElement("img", { src: "/skydive.png", className: "nishImg" })
+								{ className: "col-md-offset-6" },
+								_react2.default.createElement(
+									"div",
+									{ className: "nishPicDiv" },
+									_react2.default.createElement("img", { src: "/skydive.png", className: "nishImg" })
+								)
 							)
 						)
 					)
@@ -29932,6 +29944,223 @@ var Portfolio = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Portfolio;
+
+/***/ }),
+/* 280 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Interests = function (_React$Component) {
+	_inherits(Interests, _React$Component);
+
+	function Interests() {
+		_classCallCheck(this, Interests);
+
+		return _possibleConstructorReturn(this, (Interests.__proto__ || Object.getPrototypeOf(Interests)).call(this));
+	}
+
+	_createClass(Interests, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"section",
+				{ id: "interests" },
+				_react2.default.createElement(
+					"div",
+					{ className: "row-interests" },
+					_react2.default.createElement(
+						"h1",
+						null,
+						"My Interests"
+					)
+				)
+			);
+		}
+	}]);
+
+	return Interests;
+}(_react2.default.Component);
+
+exports.default = Interests;
+
+/***/ }),
+/* 281 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FooterComponent = function (_React$Component) {
+	_inherits(FooterComponent, _React$Component);
+
+	function FooterComponent() {
+		_classCallCheck(this, FooterComponent);
+
+		return _possibleConstructorReturn(this, (FooterComponent.__proto__ || Object.getPrototypeOf(FooterComponent)).call(this));
+	}
+
+	_createClass(FooterComponent, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"section",
+				{ id: "connect" },
+				_react2.default.createElement(
+					"div",
+					{ className: "row-footer" },
+					_react2.default.createElement(
+						"div",
+						{ className: "col-md-4" },
+						_react2.default.createElement(
+							"div",
+							{ className: "location-footer" },
+							_react2.default.createElement(
+								"h1",
+								null,
+								"Location"
+							),
+							_react2.default.createElement(
+								"p",
+								{ className: "footer-p" },
+								"San Francisco, CA"
+							)
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "col-md-4" },
+						_react2.default.createElement(
+							"div",
+							{ className: "location-footer" },
+							_react2.default.createElement(
+								"h1",
+								null,
+								"Stalk Me Here"
+							),
+							_react2.default.createElement(
+								"ul",
+								{ className: "list-inline" },
+								_react2.default.createElement(
+									"li",
+									null,
+									_react2.default.createElement(
+										"a",
+										{ href: "https://www.linkedin.com/in/mrnishantmehta/", className: "btn-social btn-outline", target: "_blank" },
+										_react2.default.createElement(
+											"span",
+											{ className: "sr-only" },
+											"Linked In"
+										),
+										_react2.default.createElement("i", { className: "fa fa-fw fa-linkedin" })
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									null,
+									_react2.default.createElement(
+										"a",
+										{ href: "https://github.com/nishmeht7", className: "btn-social btn-outline", target: "_blank" },
+										_react2.default.createElement(
+											"span",
+											{ className: "sr-only" },
+											"GitHub"
+										),
+										_react2.default.createElement("i", { className: "fa fa-fw fa-github" })
+									)
+								),
+								_react2.default.createElement(
+									"li",
+									null,
+									_react2.default.createElement(
+										"a",
+										{ href: "mailto:nishmeht7@gmail.com", className: "btn-social btn-outline", target: "_blank" },
+										_react2.default.createElement(
+											"span",
+											{ className: "sr-only" },
+											"Email"
+										),
+										_react2.default.createElement("i", { className: "fa fa-fw fa-envelope" })
+									)
+								)
+							),
+							_react2.default.createElement(
+								"p",
+								{ className: "footer-p" },
+								"Don't be shy, say HI! "
+							)
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "col-md-4" },
+						_react2.default.createElement(
+							"div",
+							{ className: "location-footer" },
+							_react2.default.createElement(
+								"h1",
+								null,
+								"Resume"
+							),
+							_react2.default.createElement(
+								"p",
+								{ className: "footer-p" },
+								"Click ",
+								_react2.default.createElement(
+									"a",
+									{ href: "/NishantMehta.pdf", target: "_blank" },
+									"here"
+								),
+								" to view"
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return FooterComponent;
+}(_react2.default.Component);
+
+exports.default = FooterComponent;
 
 /***/ })
 /******/ ]);
