@@ -30,19 +30,3 @@ export class HomepageComponent extends React.Component {
 		)
 	}
 }
-
-/* ------Container--------------*/
-
-import { connect } from 'react-redux';
-
-function mapState(state, ownProps){
-
-}
-
-function mapDispatch(state, ownProps){
-
-}
-
-const homepageContainer = connect(mapState, mapDispatch)(HomepageComponent);
-
-export default homepageContainer;
