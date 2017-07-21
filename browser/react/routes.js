@@ -1,6 +1,5 @@
 import React from 'react';
 import { Router, Route, browserHistory, IndexRedirect, IndexRoute } from 'react-router';
-import { Provider } from 'react-redux';
 import { HomepageComponent } from './components/homepageComponent.js';
 import homepageContainer from './components/homepageComponent.js';
 import MyInfoComponent from './components/myInfoComponent.js';
