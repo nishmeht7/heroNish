@@ -9,6 +9,8 @@ const router = require('express').Router();
 //morgan middleware
 app.use(morgan('dev'));
 
+app.set('port', (process.env.PORT || 3005));
+
 //implementing body-parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -24,7 +26,7 @@ app.get('/*', function(req, res){
 })
 
 //listening on port 3005
-const server = app.listen(process.env.PORT || 3005, function(){
+const server = app.listen(app.get('port'), function(){
 		console.log('listening on 3005');
 })
 
