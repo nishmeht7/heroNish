@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack -w & nodemon app.js",
+    "start-build": "webpack -w & nodemon app.js",
+    "start": "node app.js",
     "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "repository": {
