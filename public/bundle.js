@@ -26584,13 +26584,18 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 					),
 					_react2.default.createElement(
 						"div",
-						{ id: "navbarCollapse", className: "collapse navbar-collapse" },
+						{ className: "collapse navbar-collapse", id: "bs-example-navbar-collapse-1" },
 						_react2.default.createElement(
 							"ul",
 							{ className: "nav navbar-nav navbar-right" },
 							_react2.default.createElement(
 								"li",
-								null,
+								{ className: "hidden" },
+								_react2.default.createElement("a", { href: "#page-top" })
+							),
+							_react2.default.createElement(
+								"li",
+								{ className: "page-scroll" },
 								_react2.default.createElement(
 									"a",
 									{ href: "#about" },
@@ -26599,7 +26604,7 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 							),
 							_react2.default.createElement(
 								"li",
-								null,
+								{ className: "page-scroll" },
 								_react2.default.createElement(
 									"a",
 									{ href: "#portfolio" },
@@ -26608,11 +26613,11 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 							),
 							_react2.default.createElement(
 								"li",
-								null,
+								{ className: "page-scroll" },
 								_react2.default.createElement(
 									"a",
 									{ href: "#connect" },
-									"Let's Connect!"
+									"Let's Connect"
 								)
 							)
 						)
@@ -26624,7 +26629,13 @@ var HomepageComponent = exports.HomepageComponent = function (_React$Component) 
 	}]);
 
 	return HomepageComponent;
-}(_react2.default.Component);
+}(_react2.default.Component); /* <div id="navbarCollapse" className="collapse navbar-collapse">
+                              			        <ul className="nav navbar-nav navbar-right">
+                              			            <li><a href="#about">About Me</a></li>
+                              			            <li><a href="#portfolio">My Portfolio</a></li>
+                              			            <li><a href="#connect">Let's Connect!</a></li>
+                              			        </ul>
+                              			    </div>*/
 
 /***/ }),
 /* 235 */

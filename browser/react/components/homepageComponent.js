@@ -17,16 +17,32 @@ export class HomepageComponent extends React.Component {
 				        </button>
 				        <a href="#me" className="navbar-brand">Nishant Mehta</a>
 				    </div>
-				    <div id="navbarCollapse" className="collapse navbar-collapse">
-				        <ul className="nav navbar-nav navbar-right">
-				            <li><a href="#about">About Me</a></li>
-				            <li><a href="#portfolio">My Portfolio</a></li>
-				            <li><a href="#connect">Let's Connect!</a></li>
-				        </ul>
-				    </div>
+				   
+				    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		                <ul className="nav navbar-nav navbar-right">
+		                    <li className="hidden">
+		                        <a href="#page-top"></a>
+		                    </li>
+		                    <li className="page-scroll">
+		                        <a href="#about">About Me</a>
+		                    </li>
+		                    <li className="page-scroll">
+		                        <a href="#portfolio">My Portfolio</a>
+		                    </li>
+		                    <li className="page-scroll">
+		                        <a href="#connect">Let's Connect</a>
+		                    </li>
+		                </ul>
+		            </div>
 				</nav>
 				{children}
 			</div>
 		)
 	}
-}
+}/* <div id="navbarCollapse" className="collapse navbar-collapse">
+				        <ul className="nav navbar-nav navbar-right">
+				            <li><a href="#about">About Me</a></li>
+				            <li><a href="#portfolio">My Portfolio</a></li>
+				            <li><a href="#connect">Let's Connect!</a></li>
+				        </ul>
+				    </div>*/
