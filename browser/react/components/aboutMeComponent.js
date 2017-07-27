@@ -26,15 +26,15 @@ export default class AboutMeComponent extends React.Component {
 						<div className="about-section">
 						<div className="col-md-6">
 						<div className="aboutText">
-							<ul>
-								<li>I Really Like Problem Solving </li>
-								<li>I Like High Adrenaline Activities</li>
-								<li>I Love Javascript</li>
-								<li>I'm a founding member of a tech company</li>
-								<li>I grew it to 13 people and $1M+ in funding</li>
-								<li>I am addicted to the sweat and hustle to WIN</li>
-								<li>I enjoy working with a goal oriented team</li>
-								<li>Above all I love pizza</li>
+							<ul className="ul-about">
+								<li><i className="fa fa-star" aria-hidden="true" /> I Really Like Problem Solving</li>
+								<li><i className="fa fa-star" aria-hidden="true" /> I Like High Adrenaline Activities</li>
+								<li><i className="fa fa-star" aria-hidden="true" /> I Love Javascript</li>
+								<li><i className="fa fa-star" aria-hidden="true" /> I'm a founding member of a tech company</li>
+								<li><i className="fa fa-star" aria-hidden="true" /> I grew it to 13 people and $1M+ in funding</li>
+								<li><i className="fa fa-star" aria-hidden="true" /> I am addicted to the sweat and hustle needed to WIN</li>
+								<li><i className="fa fa-star" aria-hidden="true" /> I love proving people wrong and doing the impossible</li>
+								<li><i className="fa fa-star" aria-hidden="true" /> Above all I LOVE pizza</li>
 							</ul>
 							</div>
 						</div>

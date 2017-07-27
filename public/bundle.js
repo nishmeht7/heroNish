@@ -24187,7 +24187,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Root() {
 	return _react2.default.createElement(
 		_reactRouter.Router,
-		{ history: _reactRouter.browserHistory },
+		{ history: _reactRouter.hashHistory },
 		_react2.default.createElement(
 			_reactRouter.Route,
 			{ path: '/root', component: _homepageComponent.HomepageComponent },
@@ -26727,7 +26727,7 @@ var MyInfoComponent = function (_React$Component) {
 							'div',
 							{ className: 'text-center' },
 							_react2.default.createElement(
-								'h3',
+								'h2',
 								null,
 								'FullStack Javascript Developer'
 							)
@@ -26828,19 +26828,56 @@ var AboutMeComponent = function (_React$Component) {
 									"div",
 									{ className: "aboutText" },
 									_react2.default.createElement(
-										"p",
-										null,
-										"I love problem solving. There's nothing more exhilarating than hacking through complex problems Except of course jumping from a plane at 20,000 feet above the palm islands in Dubai!",
-										_react2.default.createElement("br", null)
-									),
-									_react2.default.createElement(
-										"p",
-										null,
-										"Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!",
-										_react2.default.createElement("br", null),
-										"I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!",
-										_react2.default.createElement("br", null),
-										"HIRE ME!!!!!"
+										"ul",
+										{ className: "ul-about" },
+										_react2.default.createElement(
+											"li",
+											null,
+											_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+											" I Really Like Problem Solving"
+										),
+										_react2.default.createElement(
+											"li",
+											null,
+											_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+											" I Like High Adrenaline Activities"
+										),
+										_react2.default.createElement(
+											"li",
+											null,
+											_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+											" I Love Javascript"
+										),
+										_react2.default.createElement(
+											"li",
+											null,
+											_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+											" I'm a founding member of a tech company"
+										),
+										_react2.default.createElement(
+											"li",
+											null,
+											_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+											" I grew it to 13 people and $1M+ in funding"
+										),
+										_react2.default.createElement(
+											"li",
+											null,
+											_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+											" I am addicted to the sweat and hustle needed to WIN"
+										),
+										_react2.default.createElement(
+											"li",
+											null,
+											_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+											" I love proving people wrong and doing the impossible"
+										),
+										_react2.default.createElement(
+											"li",
+											null,
+											_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+											" Above all I LOVE pizza"
+										)
 									)
 								)
 							),
@@ -26862,6 +26899,16 @@ var AboutMeComponent = function (_React$Component) {
 
 	return AboutMeComponent;
 }(_react2.default.Component);
+/*<p>
+								I love problem solving. There's nothing more exhilarating than hacking through complex problems Except of course jumping from a plane at 20,000 feet above the palm islands in Dubai!
+								<br /></p>
+								<p>Becoming the best developer is my goal and my current weapon of choice is Javascript with all it's ammo that includes React, React-Native, Redux, Node, Express, Socket.io, gaming libraries and so much more that's being added everyday!
+								<br /> 
+								I have extensive experience in the tech industry, having grown a company of my own I'm addicted to the sweat, hustle and dedication that goes into creating a winning team and succeeding!
+								<br /> 
+								HIRE ME!!!!!
+							</p>*/
+
 
 exports.default = AboutMeComponent;
 
@@ -26981,12 +27028,12 @@ var Portfolio = function (_React$Component) {
 										{ className: "col-lg-12", style: divStyle },
 										_react2.default.createElement(
 											"a",
-											{ href: "http://arrowstorm.herokuapp.com/" },
+											{ href: "http://arrowstorm.herokuapp.com/", target: "_blank" },
 											"Play Now!"
 										),
 										_react2.default.createElement(
 											"a",
-											{ href: "https://github.com/Mojotatan/Arrowstorm" },
+											{ href: "https://github.com/Mojotatan/Arrowstorm", target: "_blank" },
 											"GitHub"
 										)
 									)
@@ -27032,12 +27079,12 @@ var Portfolio = function (_React$Component) {
 										{ className: "col-lg-12", style: divStyle },
 										_react2.default.createElement(
 											"a",
-											{ href: "http://balers.herokuapp.com/" },
+											{ href: "http://balers.herokuapp.com/", target: "_blank" },
 											"Go Shop!"
 										),
 										_react2.default.createElement(
 											"a",
-											{ href: "https://github.com/Charlesincharge43/GraceShopperBallers" },
+											{ href: "https://github.com/Charlesincharge43/GraceShopperBallers", target: "_blank" },
 											"GitHub"
 										)
 									)
@@ -27077,7 +27124,7 @@ var Portfolio = function (_React$Component) {
 										{ className: "col-lg-12", style: divStyle },
 										_react2.default.createElement(
 											"a",
-											{ href: "https://github.com/nishmeht7/Auto-Trivia-" },
+											{ href: "https://github.com/nishmeht7/Auto-Trivia-", target: "_blank" },
 											"GitHub"
 										)
 									)
@@ -27109,7 +27156,7 @@ var Portfolio = function (_React$Component) {
 										{ className: "col-lg-12", style: divStyle },
 										_react2.default.createElement(
 											"a",
-											{ href: "https://www.youtube.com/watch?v=D6j8RPvBccI&t=6s" },
+											{ href: "https://www.youtube.com/watch?v=D6j8RPvBccI&t=6s", target: "_blank" },
 											"Watch Video!"
 										)
 									)

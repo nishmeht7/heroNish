@@ -42,8 +42,8 @@ export default class Portfolio extends React.Component {
 										• Created a map editor, which allows users to create, customize and compete on maps of their own design<br /><br />
 									</p>
 									<div className="col-lg-12" style={divStyle}>
-		                                <a href="http://arrowstorm.herokuapp.com/">Play Now!</a>
-		                                <a href="https://github.com/Mojotatan/Arrowstorm">GitHub</a>
+		                                <a href="http://arrowstorm.herokuapp.com/" target="_blank">Play Now!</a>
+		                                <a href="https://github.com/Mojotatan/Arrowstorm" target="_blank">GitHub</a>
 		                            </div>
 	                            </div>
 	                        </div>
@@ -65,8 +65,8 @@ export default class Portfolio extends React.Component {
 										• Integrated SendGrid API for automated email notifications<br /><br />
 									</p>
 	                                <div className="col-lg-12" style={divStyle}>
-		                                <a href="http://balers.herokuapp.com/">Go Shop!</a>
-		                                <a href="https://github.com/Charlesincharge43/GraceShopperBallers">GitHub</a>
+		                                <a href="http://balers.herokuapp.com/" target="_blank">Go Shop!</a>
+		                                <a href="https://github.com/Charlesincharge43/GraceShopperBallers" target="_blank">GitHub</a>
 	                            	</div>
 	                            </div>
 	                        </div>
@@ -85,7 +85,7 @@ export default class Portfolio extends React.Component {
 										• Added multiplayer functionality using sockets to allow effective communication between multiple clients<br /><br />
 									</p>
 	                                <div className="col-lg-12" style={divStyle}>
-		                                <a href="https://github.com/nishmeht7/Auto-Trivia-">GitHub</a>
+		                                <a href="https://github.com/nishmeht7/Auto-Trivia-" target="_blank">GitHub</a>
 	                            	</div>
 	                            </div>
 	                        </div>
@@ -97,7 +97,7 @@ export default class Portfolio extends React.Component {
 	                                <h3>Blockchain Vs. Bitcoin</h3>
 	                                <p>I gave a technical talk about Blockchain and Bitcoin. This you'll definitely understand - Check it out!</p>
 	                                <div className="col-lg-12" style={divStyle}>
-		                                <a href="https://www.youtube.com/watch?v=D6j8RPvBccI&t=6s">Watch Video!</a>
+		                                <a href="https://www.youtube.com/watch?v=D6j8RPvBccI&t=6s" target="_blank">Watch Video!</a>
 	                            	</div>
 	                            </div>
 	                        </div>
