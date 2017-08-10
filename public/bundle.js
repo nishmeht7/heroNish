@@ -27385,7 +27385,7 @@ var FooterComponent = function (_React$Component) {
 								"Click ",
 								_react2.default.createElement(
 									"a",
-									{ href: "/NishantMehta.pdf", target: "_blank" },
+									{ href: "/Resume-NishantMehta.pdf", target: "_blank" },
 									"here"
 								),
 								" to view"

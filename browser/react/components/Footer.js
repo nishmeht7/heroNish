@@ -44,7 +44,7 @@ export default class FooterComponent extends React.Component {
 					<div className="col-md-4">
 						<div className="location-footer">
 							<h1>Resume</h1>
-							<p className="footer-p">Click <a href="/NishantMehta.pdf" target="_blank">here</a> to view</p>
+							<p className="footer-p">Click <a href="/Resume-NishantMehta.pdf" target="_blank">here</a> to view</p>
 						</div>
 					</div> 
 				</div>
