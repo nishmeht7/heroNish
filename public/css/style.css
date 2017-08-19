@@ -129,6 +129,7 @@ body {
 }
 
 .ul-about {
+    padding-top: 20px;
     list-style: none;
     text-align: left; 
     line-height: 175%;
@@ -333,6 +334,11 @@ h3 {
 
 .about-section {
     margin-top: 70px;
+    padding-bottom: 50px;
+}
+
+.about-video {
+    margin-left: 10px;
 }
 
 .nishPicDiv {
