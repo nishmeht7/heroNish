@@ -27,6 +27,28 @@ export default class Portfolio extends React.Component {
 						        </div>
 						    </div>
 						</div>
+
+	                    <div className="col-lg-6">
+
+	                         
+	                        <div className="dtl26">
+	                            <img src="/spellChecker.png" alt="" />
+	                            <div className="dtl">
+	                                <h3>Spell Checker</h3>
+	                                <p>Auto correct for the web!
+	                                <br /><br />
+		                                • Auto-correct for the web, provides real-time word suggestions on every user keystroke<br /><br />
+										• Developed with Maven, using Spring Boot on the backend and React on the frontend<br /><br />
+										• Created a prefix tree to store dictionary words, which provides O(k) runtime (k is length of word) for retrieval<br /><br />
+									</p>
+	                                <div className="col-lg-12" style={divStyle}>
+		                                <a href="https://github.com/nishmeht7/spellChecker" target="_blank">GitHub</a>
+	                            	</div>
+	                            </div>
+	                        </div>
+
+	                    </div>
+
 						<div className="col-lg-6">
 
 	                         
@@ -49,30 +71,6 @@ export default class Portfolio extends React.Component {
 	                        </div>
 
 	                    </div>
-
-	                    <div className="col-lg-6">
-
-	                         
-	                        <div className="dtl26">
-	                            <img src="/ballers.png" alt="" />
-	                            <div className="dtl">
-	                                <h3>Ballers</h3>
-	                                <p>E-commerce store for basketball merch
-	                                <br /><br />
-		                                • Implemented using React/Redux on the front-end and Sequelize/Express/NodeJs on the back-end<br /><br />
-										• Setup authentication via local email/password and Google OAuth using passport.js<br /><br />
-										• Created a seamless process for adding items to cart, and billing and checkout<br /><br />
-										• Integrated SendGrid API for automated email notifications<br /><br />
-									</p>
-	                                <div className="col-lg-12" style={divStyle}>
-		                                <a href="http://balers.herokuapp.com/" target="_blank">Go Shop!</a>
-		                                <a href="https://github.com/Charlesincharge43/GraceShopperBallers" target="_blank">GitHub</a>
-	                            	</div>
-	                            </div>
-	                        </div>
-
-	                    </div>
-
 
 						<div className="col-lg-6">
 	                        <div className="dtl26">

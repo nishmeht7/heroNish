@@ -32,7 +32,7 @@ export default class MyInfoComponent extends React.Component {
 						    </div>
 						</div>
 						<div className="text-center">
-							<h2>FullStack Javascript Developer</h2>
+							<h2>FullStack Badass</h2>
 						</div>
 					</div>
 					<AboutMeComponent />

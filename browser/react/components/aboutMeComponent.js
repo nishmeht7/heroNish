@@ -29,7 +29,8 @@ export default class AboutMeComponent extends React.Component {
 							<ul className="ul-about">
 								<li><i className="fa fa-star" aria-hidden="true" /> I Really Like Problem Solving</li>
 								<li><i className="fa fa-star" aria-hidden="true" /> I Like High Adrenaline Activities</li>
-								<li><i className="fa fa-star" aria-hidden="true" /> I Love Javascript</li>
+								<li><i className="fa fa-star" aria-hidden="true" /> I Love Java and Javascript</li>
+								<li><i className="fa fa-star" aria-hidden="true" /> I am a current MSCS student at The University of San Francisco</li>
 								<li><i className="fa fa-star" aria-hidden="true" /> I'm a founding member of a tech company</li>
 								<li><i className="fa fa-star" aria-hidden="true" /> I grew it to 13 people and $1M+ in funding</li>
 								<li><i className="fa fa-star" aria-hidden="true" /> I am addicted to the sweat and hustle needed to WIN</li>
