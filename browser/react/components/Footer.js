@@ -26,9 +26,15 @@ export default class FooterComponent extends React.Component {
 	                                </a>
 	                            </li>
 	                            <li>
-									<a href="https://github.com/nishmeht7" className="btn-social btn-outline" target="_blank">
+									<a href="https://github.com" className="btn-social btn-outline" target="_blank">
 		                                <span className="sr-only">GitHub</span>
 		                                <i className="fa fa-fw fa-github"/>
+	                                </a>
+	                            </li>
+	                            <li>
+									<a href="https://stackoverflow.com/users/9028873/nishant-mehta" className="btn-social btn-outline" target="_blank">
+		                                <span className="sr-only">StackOverflow</span>
+		                                <i className="fa fa-stack-overflow"/>
 	                                </a>
 	                            </li>
 	                            <li>
